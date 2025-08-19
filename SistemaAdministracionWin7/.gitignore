@@ -14,6 +14,18 @@ bld/
 [Ll]og/
 [Ll]ogs/
 
+# Build results (more specific)
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+
+# Compiled files
+*.dll
+*.pdb
+*.exe
+*.cache
+
 # Visual Studio temporary files
 *.suo
 *.user
@@ -21,13 +33,19 @@ bld/
 *.sln.docstates
 *.userprefs
 
-# Build results
-**/bin/
-**/obj/
-
 # NuGet packages
 *.nupkg
 packages/
+**/packages/
 
 # Visual Studio cache files
 .vs/
+
+#md files
+*.md
+
+# Build cache files
+*.csproj.AssemblyReference.cache
+*.csproj.CoreCompileInputs.cache
+*.csproj.FileListAbsolute.txt
+DesignTimeResolveAssemblyReferencesInput.cache
