@@ -1,4 +1,0 @@
-F:\Laburo\Sistema\Fuente\SistemaAdministracion\InstalationsUtils\obj\Debug\InstalationsUtils.csprojResolveAssemblyReference.cache
-F:\Laburo\Sistema\Fuente\SistemaAdministracion\InstalationsUtils\obj\Debug\InstalationsUtils.Form1.resources
-F:\Laburo\Sistema\Fuente\SistemaAdministracion\InstalationsUtils\obj\Debug\InstalationsUtils.Properties.Resources.resources
-F:\Laburo\Sistema\Fuente\SistemaAdministracion\InstalationsUtils\obj\Debug\InstalationsUtils.csproj.GenerateResource.Cache

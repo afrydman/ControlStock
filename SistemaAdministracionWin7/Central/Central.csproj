@@ -480,10 +480,6 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\AfipClient\Cliente\ClienteFacturaElectronica\ClienteFacturaElectronica.csproj">
-      <Project>{45efe7b2-7a4f-4d55-b9ed-ff0ae9daf24c}</Project>
-      <Name>ClienteFacturaElectronica</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{CA8BFA2D-C693-4405-A12A-7426DBCC9882}</Project>
       <Name>DTO</Name>
