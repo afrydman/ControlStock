@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E6E87195-6DED-43AD-B8E3-7E528CBF9528}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sync</RootNamespace>
+    <AssemblyName>Sync</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=3.0.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\SistemaAdministracion\packages\Common.Logging.3.0.0\lib\net40\Common.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.0.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\SistemaAdministracion\packages\Common.Logging.Core.3.0.0\lib\net40\Common.Logging.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Quartz, Version=2.3.3.0, Culture=neutral, PublicKeyToken=f6b8c98a402cc8a4, processorArchitecture=MSIL">
+      <HintPath>..\SistemaAdministracion\packages\Quartz.2.3.3\lib\net40-client\Quartz.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CronService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CronService.Designer.cs">
+      <DependentUpon>CronService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jobs\Central\tranfieroMovimientosJob.cs" />
+    <Compile Include="Jobs\Central\tranfieroBancosJob.cs" />
+    <Compile Include="Jobs\Central\tranfieroCuentasJob.cs" />
+    <Compile Include="Jobs\Central\tranfieroReciboClientes.cs" />
+    <Compile Include="Jobs\Central\tranfieroNotaDebitoyCreditoProveedores .cs" />
+    <Compile Include="Jobs\Central\tranfieroNotaDebitoyCreditoClientes.cs" />
+    <Compile Include="Jobs\Central\tranfieroOPagoJob.cs" />
+    <Compile Include="Jobs\Central\tranfieroComprasProveedores.cs" />
+    <Compile Include="Jobs\Central\tranfieroChequeraJob.cs" />
+    <Compile Include="Jobs\Central\tranfieroChequesJob.cs" />
+    <Compile Include="Jobs\Gral\tranfieroClientesJob.cs" />
+    <Compile Include="Jobs\Gral\tranfieroCajasJob.cs" />
+    <Compile Include="Jobs\Gral\tranfieroPersonalJob.cs" />
+    <Compile Include="Jobs\Gral\tranfieroRemitosParaPvJob.cs" />
+    <Compile Include="Jobs\JobHelper.cs" />
+    <Compile Include="Jobs\Gral\tranfieroTipoIngresoJob.cs" />
+    <Compile Include="Jobs\Gral\tranfieroTipoRetiroJob.cs" />
+    <Compile Include="Jobs\Gral\tranfieroPreciosJob.cs" />
+    <Compile Include="Jobs\Gral\tranfieroListaPrecioJob.cs" />
+    <Compile Include="Jobs\Gral\tranfieroProductosJob.cs" />
+    <Compile Include="Jobs\Gral\tranfieroFormasPagoJob.cs" />
+    <Compile Include="Jobs\Gral\tranfieroValesJob.cs" />
+    <Compile Include="Jobs\Gral\tranfieroRemitosJob.cs" />
+    <Compile Include="Jobs\Gral\tranfieroColoresJob.cs" />
+    <Compile Include="Jobs\Gral\tranfieroVentasJob.cs" />
+    <Compile Include="Jobs\Gral\tranfieroIngresosJob.cs" />
+    <Compile Include="Jobs\Gral\tranfieroRetirosJob.cs" />
+    <Compile Include="Jobs\Gral\tranfieroLocalesJob.cs" />
+    <Compile Include="Jobs\Gral\tranfieroProveedoresJob.cs" />
+    <Compile Include="LoggeableJob.cs" />
+    <Compile Include="Triggers\testTrigger.cs" />
+    <Compile Include="Triggers\DownloadTrigger.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="job_scheduling_data_2_0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessComponents\BusinessComponents.csproj">
+      <Project>{A74E0122-6364-46FB-BB11-FDDE577672C6}</Project>
+      <Name>BusinessComponents</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{CA8BFA2D-C693-4405-A12A-7426DBCC9882}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SharedForms\SharedForms.csproj">
+      <Project>{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}</Project>
+      <Name>SharedForms</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Jobs\Pventa\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2CF08246-9E49-4F5B-8E84-89FFC9D6BCE6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Services</RootNamespace>
+    <AssemblyName>Services</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.2\lib\net40\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjectDumper">
+      <HintPath>..\packages\ObjectDumper.1.0.0.12\lib\net35-Client\ObjectDumper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractService\FatherService.cs" />
+    <Compile Include="AbstractService\ObjectGetterService.cs" />
+    <Compile Include="Interfaces\IDefaultable.cs" />
+    <Compile Include="PuntoControlService\PuntoControlService.cs" />
+    <Compile Include="TributoService\TributoNexoService.cs" />
+    <Compile Include="TributoService\TributoService.cs" />
+    <Compile Include="CondicionVenta\CondicionVentaService.cs" />
+    <Compile Include="CondicionIVA\CondicionIVAService.cs" />
+    <Compile Include="Interfaces\IGetNextNumber.cs" />
+    <Compile Include="AbstractService\ObjectService.cs" />
+    <Compile Include="AbstractService\PersonaService.cs" />
+    <Compile Include="AdministracionService\TipoIngresoService.cs" />
+    <Compile Include="AdministracionService\TipoRetiroService.cs" />
+    <Compile Include="BancoService\BancoService.cs" />
+    <Compile Include="CajaService\CajaService.cs" />
+    <Compile Include="ChequeraService\ChequeraService.cs" />
+    <Compile Include="ChequeraService\IChequeraService.cs" />
+    <Compile Include="ChequeService\ChequeService.cs" />
+    <Compile Include="ChequeService\IChequeService.cs" />
+    <Compile Include="ClienteService\ClienteService.cs" />
+    <Compile Include="ColorService\ColorService.cs" />
+    <Compile Include="ComprasProveedorService\ComprasProveedorService.cs" />
+    <Compile Include="ConexionService.cs" />
+    <Compile Include="CuentaService\CuentaService.cs" />
+    <Compile Include="FormaPagoService\FormaPagoCuotaService.cs" />
+    <Compile Include="FormaPagoService\FormaPagoService.cs" />
+    <Compile Include="HelperService.cs" />
+    <Compile Include="Interfaces\IGenericService.cs" />
+    <Compile Include="AdministracionService\IngresoService.cs" />
+    <Compile Include="Interfaces\IPersona.cs" />
+    <Compile Include="AdministracionService\RetiroService.cs" />
+    <Compile Include="MirazonService\MiRazonService.cs" />
+    <Compile Include="NotaService\INotaService.cs" />
+    <Compile Include="ProductoService\ProductoService.cs" />
+    <Compile Include="ProductoService\ProductoTalleService.cs" />
+    <Compile Include="RemitoService\RemitoService.cs" />
+    <Compile Include="ServiceHandler.cs" />
+    <Compile Include="StockService\StockMetrosService.cs" />
+    <Compile Include="StockService\StockService.cs" />
+    <Compile Include="TemporadaService\TemporadaService.cs" />
+    <Compile Include="LineaService\LineaService.cs" />
+    <Compile Include="ListaPrecioService\ListaPrecioService.cs" />
+    <Compile Include="LocalService\LocalService.cs" />
+    <Compile Include="MovimientoCuentaService\IMovimientoCuentaService.cs" />
+    <Compile Include="MovimientoCuentaService\MovimientoCuentaService.cs" />
+    <Compile Include="NotaService\NotaService.cs" />
+    <Compile Include="OrdenPagoService\OrdenPagoService.cs" />
+    <Compile Include="PagoService\PagoService.cs" />
+    <Compile Include="PedidoService\PedidoService.cs" />
+    <Compile Include="PersonalService\PersonalService.cs" />
+    <Compile Include="PrecioService\PrecioService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProveedorService\ProveedorService.cs" />
+    <Compile Include="ReciboService\ReciboService.cs" />
+    <Compile Include="UsuarioService\UsuarioService.cs" />
+    <Compile Include="ValeService\ValeService.cs" />
+    <Compile Include="VentaService\VentaService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{ca8bfa2d-c693-4405-a12a-7426dbcc9882}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repository\Repository.csproj">
+      <Project>{725f298f-af5d-468f-94a4-6d5aacdab9a6}</Project>
+      <Name>Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

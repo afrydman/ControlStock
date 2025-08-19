@@ -1,0 +1,4 @@
+F:\Laburo\Sistema\Fuente\SistemaAdministracion\ActualizarVersion\obj\x86\Debug\ActualizarVersion.csprojResolveAssemblyReference.cache
+F:\Laburo\Sistema\Fuente\SistemaAdministracion\ActualizarVersion\obj\x86\Debug\ActualizarVersion.Form1.resources
+F:\Laburo\Sistema\Fuente\SistemaAdministracion\ActualizarVersion\obj\x86\Debug\ActualizarVersion.Properties.Resources.resources
+F:\Laburo\Sistema\Fuente\SistemaAdministracion\ActualizarVersion\obj\x86\Debug\ActualizarVersion.csproj.GenerateResource.Cache

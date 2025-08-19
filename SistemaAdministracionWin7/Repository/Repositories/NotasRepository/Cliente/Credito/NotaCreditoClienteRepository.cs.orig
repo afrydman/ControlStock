@@ -1,0 +1,265 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Dapper;
+using DTO;
+using DTO.BusinessEntities;
+using Repository.ConnectionFactoryStuff;
+
+namespace Repository.Repositories.NotasRepository
+{
+    public class NotaCreditoClienteRepository: DbRepository,INotaRepository
+    {
+        public NotaCreditoClienteRepository(bool local=true) : base(local)
+        {
+        }
+
+        public bool Insert(NotaData theObject)
+        {
+            using (var con = ConnectionFactory.CreateConnection(_connectionString))
+            {
+                var sqlEnvio = @"INSERT INTO [dbo].[notacreditoClientes]
+           ([id]
+           ,[idlocal]
+           ,[Numero]
+           ,[Prefix]
+           ,[clase]
+           ,[idpersonal]
+           ,[Date]
+           ,[Enable]
+           ,[iva]
+           ,[Monto]
+           ,[Description]
+           ,[idcliente],descuento)
+     VALUES
+           (@id
+           ,@idlocal
+           ,@Numero
+           ,@Prefix
+           ,@Clase
+           ,@idpersonal
+           ,@Date
+           ,@Enable
+           ,@iva
+           ,@Monto
+           ,@Description
+           ,@idcliente,@descuento);
+            SELECT @@ROWCOUNT;";
+                return con.QueryFirstOrDefault<int>(sqlEnvio, new
+                {
+                    id = theObject.ID,
+                    idLocal = theObject.Local.ID,
+                    numero = theObject.Numero,
+                    prefix = theObject.Prefix,
+                    Clase = (int)theObject.Clase,
+                    idpersonal = theObject.vendedor.ID,
+                    theObject.Date,
+                    theObject.Enable,
+                    theObject.iva,
+                    monto = theObject.Monto,
+                    theObject.Description,
+                    idcliente=theObject.tercero.ID,
+                    theObject.descuento
+                }) > 0;
+
+            }
+        }
+
+        public bool Update(NotaData theObject)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Disable(Guid idObject)
+        {
+            using (var con = ConnectionFactory.CreateConnection(_connectionString))
+            {
+                var sql = @"	update notacreditoclientes set Enable = '0' where id  = @id;
+                        SELECT @@ROWCOUNT;";
+                return con.QueryFirstOrDefault<int>(sql, new { id = idObject}) > 0;
+            }
+        }
+
+        public bool Enable(Guid idObject)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<NotaData> GetAll()
+        {
+            using (var con = ConnectionFactory.CreateConnection(_connectionString))
+            {
+                var sql = "select " + DEFAULT_SELECT;
+                IEnumerable<NotaData> resultado = con.Query<NotaData, LocalData, PersonalData, ClienteData, NotaData>(sql,
+                    (nota, local, personal, cliente) =>
+                    {
+                        nota.Local = local;
+                        nota.vendedor = personal;
+                        nota.tercero = cliente;
+                        return nota;
+                    });
+
+                List<NotaData> resultado2 = resultado.ToList();
+
+                resultado2.ForEach(x => x.tipo = tipoNota.CreditoCliente);
+
+                return resultado2;
+            }
+        }
+
+        public NotaData GetByID(Guid idObject)
+        {
+            using (var con = ConnectionFactory.CreateConnection(_connectionString))
+            {
+                NotaData aux = con.Query<NotaData, LocalData, PersonalData, ClienteData, NotaData>("SELECT " + DEFAULT_SELECT + "  Where nota.id= @id ",
+                    (nota, local, personal, cliente) =>
+                    {
+                        nota.Local = local;
+                        nota.vendedor = personal;
+                        nota.tercero = cliente;
+                        return nota;
+                    },
+                    new { id = idObject }).FirstOrDefault();
+
+                if (aux!=null)
+                {
+                    aux.tipo=tipoNota.CreditoCliente;
+                    return aux;
+                }
+                return new NotaData();
+            }
+        }
+
+        public NotaData GetLast(Guid idLocal, int Prefix)
+        {
+            using (var con = ConnectionFactory.CreateConnection(_connectionString))
+            {
+<<<<<<< HEAD
+                var sql = @"select top 1 " + DEFAULT_SELECT + @"   where nota.Prefix=@first and nota.idlocal=@idlocal  and nota.Numero = (
+                            select max(Numero) as 'Numero' from notaCreditoClientes where Prefix=@first and idlocal=@Local ) ";
+=======
+                var sql = @"select top 1 " + DEFAULT_SELECT + @"   where nota.Prefix=@Prefix and nota.idlocal=@idlocal  and nota.Numero = (
+                            select max(Numero) as 'Numero' from notaCreditoClientes where Prefix=@Prefix and idlocal=@idLocal ) ";
+>>>>>>> 5ba60578442e905f4bd4b30f7e9aae264ab810e0
+
+                NotaData aux = con.Query<NotaData, LocalData, PersonalData, ClienteData, NotaData>(sql,
+                    (nota, local, personal, cliente) =>
+                    {
+                        nota.Local = local;
+                        nota.vendedor = personal;
+                        nota.tercero = cliente;
+                        return nota;
+                    }
+                    , new { idLocal = idLocal, Prefix = Prefix }).FirstOrDefault();
+                if (aux != null)
+                {
+                    aux.tipo = tipoNota.CreditoCliente;
+                    return aux;
+                }
+                return new NotaData();
+            }
+        }
+
+      
+
+        public List<NotaData> GetbyTercero(Guid idCliente)
+        {
+            using (var con = ConnectionFactory.CreateConnection(_connectionString))
+            {
+                var sql = "select " + DEFAULT_SELECT + @" where nota.idcliente = @idCliente";
+                IEnumerable<NotaData> resultado = con.Query<NotaData, LocalData, PersonalData, ClienteData, NotaData>(sql,
+                    (nota, local, personal, cliente) =>
+                    {
+                        nota.Local = local;
+                        nota.vendedor = personal;
+                        nota.tercero = cliente;
+                        return nota;
+                    }, new { idCliente = idCliente });
+                
+               List<NotaData> resultado2= resultado.ToList();
+
+                resultado2.ForEach(x => x.tipo=tipoNota.CreditoCliente);
+
+                return resultado2;
+            }
+        }
+
+        public override string DEFAULT_SELECT
+        {
+            get
+            {
+                return @"  nota.*, locales.*,Personal.*, clientes.*
+                        from notacreditoClientes nota
+                        inner join locales on nota.idlocal = locales.id
+                        inner join Personal on nota.idpersonal = Personal.id
+                        inner join clientes on nota.idcliente = clientes.id ";
+            }
+        }
+
+        public List<NotaData> GetByRangoFecha(DateTime fecha1, DateTime fecha2, Guid idLocal, int Prefix)
+        {
+            using (var con = ConnectionFactory.CreateConnection(_connectionString))
+            {
+<<<<<<< HEAD
+                var sql = "select " + DEFAULT_SELECT + @" Where nota.Local = @Local and nota.Date >= @fecha1 and nota.Date <= @fecha2 and nota.Prefix = @Prefix";
+=======
+                var sql = "select " + DEFAULT_SELECT + @" Where nota.idLocal = @idLocal and nota.Date >= @fecha1 and nota.Date <= @fecha2 and nota.Prefix = @Prefix";
+>>>>>>> 5ba60578442e905f4bd4b30f7e9aae264ab810e0
+                IEnumerable<NotaData> resultado = con.Query<NotaData, LocalData, PersonalData, ClienteData, NotaData>(sql,
+                    (nota, local, personal, cliente) =>
+                    {
+                        nota.Local = local;
+                        nota.vendedor = personal;
+                        nota.tercero = cliente;
+                        return nota;
+                    },
+                      new { fecha1 = fecha1, idLocal = idLocal, prefix = Prefix, fecha2 = fecha2 });
+                return resultado.ToList();
+            }
+        }
+
+        public List<NotaData> GetBiggerThan(int ultimo, Guid idLocal, int prefix)
+        {
+            using (var con = ConnectionFactory.CreateConnection(_connectionString))
+            {
+<<<<<<< HEAD
+                var sql = "select " + DEFAULT_SELECT + @" Where nota.Local = @Local and nota.Numero >@ultimo and nota.Prefix = @Prefix";
+=======
+                var sql = "select " + DEFAULT_SELECT + @" Where nota.idLocal = @idLocal and nota.Numero >@ultimo and nota.Prefix = @Prefix";
+>>>>>>> 5ba60578442e905f4bd4b30f7e9aae264ab810e0
+                IEnumerable<NotaData> resultado = con.Query<NotaData, LocalData, PersonalData, ClienteData, NotaData>(sql,
+                    (nota, local, personal, cliente) =>
+                    {
+                        nota.Local = local;
+                        nota.vendedor = personal;
+                        nota.tercero = cliente;
+                        return nota;
+                    },
+                      new { ultimo = ultimo, idLocal = idLocal, prefix = prefix });
+                return resultado.ToList();
+            }
+        }
+
+        public List<NotaData> GetOlderThan(DateTime ultimo, Guid idLocal, int prefix)
+        {
+            using (var con = ConnectionFactory.CreateConnection(_connectionString))
+            {
+<<<<<<< HEAD
+                var sql = "select " + DEFAULT_SELECT + @" Where nota.Local = @Local and nota.Date >@ultimo and nota.Prefix = @Prefix";
+=======
+                var sql = "select " + DEFAULT_SELECT + @" Where nota.idLocal = @idLocal and nota.Date >@ultimo and nota.Prefix = @Prefix";
+>>>>>>> 5ba60578442e905f4bd4b30f7e9aae264ab810e0
+                IEnumerable<NotaData> resultado = con.Query<NotaData, LocalData, PersonalData, ClienteData, NotaData>(sql,
+                    (nota, local, personal, cliente) =>
+                    {
+                        nota.Local = local;
+                        nota.vendedor = personal;
+                        nota.tercero = cliente;
+                        return nota;
+                    },
+                      new { ultimo = ultimo, idLocal = idLocal, prefix = prefix });
+                return resultado.ToList();
+            }
+        }
+    }
+}

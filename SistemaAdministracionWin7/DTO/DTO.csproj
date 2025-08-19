@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CA8BFA2D-C693-4405-A12A-7426DBCC9882}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DTO</RootNamespace>
+    <AssemblyName>DTO</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.2\lib\net40\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="FizzWare.NBuilder">
+      <HintPath>..\packages\NBuilder.4.0.0\lib\net40\FizzWare.NBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjectDumper">
+      <HintPath>..\packages\ObjectDumper.1.0.0.12\lib\net35-Client\ObjectDumper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessEntities\administradorData.cs" />
+    <Compile Include="BusinessEntities\AfipEntities\Generic.cs" />
+    <Compile Include="BusinessEntities\AfipEntities\Tributo.cs" />
+    <Compile Include="BusinessEntities\auxilarCC.cs" />
+    <Compile Include="BusinessEntities\auxilarVentaPedido.cs" />
+    <Compile Include="BusinessEntities\bancoData.cs" />
+    <Compile Include="BusinessEntities\cajaData.cs" />
+    <Compile Include="BusinessEntities\chequeData.cs" />
+    <Compile Include="BusinessEntities\chequeraData.cs" />
+    <Compile Include="BusinessEntities\ChildData.cs" />
+    <Compile Include="BusinessEntities\clienteData.cs" />
+    <Compile Include="BusinessEntities\colorData.cs" />
+    <Compile Include="BusinessEntities\comprasProveedoresData.cs" />
+    <Compile Include="BusinessEntities\ComprasProveedoresdetalleData.cs" />
+    <Compile Include="BusinessEntities\cuentaData.cs" />
+    <Compile Include="BusinessEntities\detalleStockData.cs" />
+    <Compile Include="BusinessEntities\documentoGeneralData.cs" />
+    <Compile Include="BusinessEntities\formaPagoData.cs" />
+    <Compile Include="BusinessEntities\formasPagoCuotasData.cs" />
+    <Compile Include="BusinessEntities\GenericObject.cs" />
+    <Compile Include="BusinessEntities\Internals\CondicionIvaData.cs" />
+    <Compile Include="BusinessEntities\lineaData.cs" />
+    <Compile Include="BusinessEntities\listaPrecioData.cs" />
+    <Compile Include="BusinessEntities\listaPrecioProductoTalleData.cs" />
+    <Compile Include="BusinessEntities\localData.cs" />
+    <Compile Include="BusinessEntities\MiRazonData.cs" />
+    <Compile Include="BusinessEntities\movimientoCuentaData.cs" />
+    <Compile Include="BusinessEntities\notaData.cs" />
+    <Compile Include="BusinessEntities\pagoData.cs" />
+    <Compile Include="BusinessEntities\pedidoData.cs" />
+    <Compile Include="BusinessEntities\pedidoDetalleData.cs" />
+    <Compile Include="BusinessEntities\personaData.cs" />
+    <Compile Include="BusinessEntities\personalData.cs" />
+    <Compile Include="BusinessEntities\productoData.cs" />
+    <Compile Include="BusinessEntities\productoTalleData.cs" />
+    <Compile Include="BusinessEntities\proveedorData.cs" />
+    <Compile Include="BusinessEntities\PuntoControlStock.cs" />
+    <Compile Include="BusinessEntities\reciboData.cs" />
+    <Compile Include="BusinessEntities\remitoData.cs" />
+    <Compile Include="BusinessEntities\remitoDetalleData.cs" />
+    <Compile Include="BusinessEntities\retiroData.cs" />
+    <Compile Include="BusinessEntities\stockData.cs" />
+    <Compile Include="BusinessEntities\stockDummyData.cs" />
+    <Compile Include="BusinessEntities\temporadaData.cs" />
+    <Compile Include="BusinessEntities\tipoIngresoData.cs" />
+    <Compile Include="BusinessEntities\tipoRetiroData.cs" />
+    <Compile Include="BusinessEntities\TributoData.cs" />
+    <Compile Include="BusinessEntities\usuarioData.cs" />
+    <Compile Include="BusinessEntities\valeData.cs" />
+    <Compile Include="BusinessEntities\ventaData.cs" />
+    <Compile Include="BusinessEntities\ventaDetalleData.cs" />
+    <Compile Include="BusinessEntities\CantidadCodigoData.cs" />
+    <Compile Include="HelperDTO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\DTO.BusinessEntities.VentaDetalleData.datasource" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

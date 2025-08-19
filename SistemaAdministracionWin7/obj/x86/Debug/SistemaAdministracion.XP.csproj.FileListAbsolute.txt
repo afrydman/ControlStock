@@ -1,0 +1,6 @@
+C:\Work\SistemaAdministracion\bin\Debug\SistemaAdministracion.XP.exe
+C:\Work\SistemaAdministracion\bin\Debug\SistemaAdministracion.XP.pdb
+C:\Work\SistemaAdministracion\obj\x86\Debug\SistemaAdministracion.XP.csproj.AssemblyReference.cache
+C:\Work\SistemaAdministracion\obj\x86\Debug\SistemaAdministracion.XP.csproj.CoreCompileInputs.cache
+C:\Work\SistemaAdministracion\obj\x86\Debug\SistemaAdministracion.XP.exe
+C:\Work\SistemaAdministracion\obj\x86\Debug\SistemaAdministracion.XP.pdb

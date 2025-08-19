@@ -1,0 +1,105 @@
+﻿using System;
+using System.Collections.Generic;
+using DTO.BusinessEntities;
+using Repository.Repositories.CajaRepository;
+
+namespace Services.CajaService
+{
+    public class CajaService 
+    {
+
+           protected readonly ICajaRepository _cajaRepository;
+           public CajaService(ICajaRepository cajaRepository)
+        {
+            _cajaRepository = cajaRepository;
+        }
+           public CajaService(bool local=true)
+           {
+               _cajaRepository = new CajaRepository(local);
+           }
+
+
+        public bool CerrarCaja(decimal final)
+        {
+            return CerrarCaja(DateTime.Now.Date, final, Guid.NewGuid(), HelperService.IDLocal);
+        }
+
+        public bool CerrarCaja(DateTime fecha, decimal final, Guid idCaja, Guid idLocal)
+        {
+            if (idLocal==Guid.Empty)
+                idLocal = HelperService.IDLocal;//no se puede pasar en la firma 
+            
+            if (idCaja==Guid.Empty)
+               idCaja = Guid.NewGuid();
+            
+            CajaData caja = new CajaData();
+            caja.Local.ID = idLocal;
+            caja.Date = fecha;
+            caja.Monto = final;
+            caja.ID = idCaja;
+
+            return _cajaRepository.Insert(caja);
+        }
+
+
+
+        public CajaData GetCajaInicial()
+        {
+            return GetCajaInicial(DateTime.Now.Date, Guid.Empty);
+
+        }
+
+        public CajaData GetCajaInicial(DateTime fecha, Guid idLocal)
+        {
+            if (idLocal==Guid.Empty)
+                idLocal = HelperService.IDLocal;//no se puede pasar en la firma 
+
+            return _cajaRepository.GetCajaInicial(idLocal, fecha);
+        }
+
+
+        public CajaData GetLast()
+        {
+            return GetLast(HelperService.IDLocal, HelperService.Prefix);
+        }
+
+        public CajaData GetLast(Guid idLocal,int first)
+        {
+            
+            return _cajaRepository.GetLast(idLocal, first);
+        }
+
+        public bool IsClosed(DateTime fecha, Guid idLocal)
+        {
+            CajaData c = _cajaRepository.GetCajabyFecha(idLocal, fecha);
+            return c!=null && _cajaRepository.GetCajabyFecha(idLocal, fecha).ID != Guid.Empty;
+        }
+
+        public List<CajaData> GetOlderThan(DateTime ultimaCaja, Guid idLocal)
+        {
+            return NormalizeList(_cajaRepository.GetOlderThan(ultimaCaja, idLocal, HelperService.Prefix));
+        }
+
+        //public List<CajaData> GetByRangoFecha(DateTime fecha1, DateTime fecha2, Guid Local)
+        //{
+<<<<<<< HEAD
+        //    return NormalizeList(_cajaRepository.GetByRangoFecha(fecha1.Date, fecha2.Date, Local, Prefix));
+=======
+        //    return NormalizeList(_cajaRepository.GetByRangoFecha(fecha1.Date, fecha2.Date, idLocal, Prefix));
+>>>>>>> 5ba60578442e905f4bd4b30f7e9aae264ab810e0
+        //}
+
+
+        public List<CajaData> NormalizeList(List<CajaData> list, bool onlyEnable = true)
+        {
+
+            //if (onlyEnable)
+            //    list = list.FindAll(data => data.Enable);
+
+            //list.ForEach(n => n = getPropertiesInfo(n));
+
+            list.Sort((x, y) => DateTime.Compare(x.Date, y.Date));
+            return list;
+        }
+    }
+}

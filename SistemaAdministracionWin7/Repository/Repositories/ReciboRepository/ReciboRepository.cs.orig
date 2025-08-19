@@ -1,0 +1,228 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Dapper;
+using DTO;
+using DTO.BusinessEntities;
+using Repository.ConnectionFactoryStuff;
+
+namespace Repository.Repositories.ReciboRepository
+{
+   public class ReciboRepository : DbRepository, IReciboRepository
+    {
+        public ReciboRepository(bool local=true) : base(local)
+        {
+        }
+
+        public bool Insert(ReciboData theObject)
+        {
+            using (var con = ConnectionFactory.CreateConnection(_connectionString))
+            {
+                var sql = @"	INSERT INTO [dbo].[recibo]
+        ([id]
+           ,[Date]
+           ,[Numero]
+           ,[Prefix]
+           ,[idCliente]
+           ,[Monto]
+           ,[Enable],idlocal,descuento,iva,idpersonal,Description)
+     VALUES
+           (@id
+           ,@Date
+           ,@Numero
+           ,@Prefix
+           ,@idCliente
+           ,@Monto
+           ,@Enable,@idlocal,@descuento,@iva,@idpersonal,@Description);
+            SELECT @@ROWCOUNT;";
+                return con.QueryFirstOrDefault<int>(sql, new
+                {
+                    id = theObject.ID,
+                    date = theObject.Date,
+                    numero = theObject.Numero,
+                    prefix = theObject.Prefix,
+                    idcliente = theObject.tercero.ID,
+                    monto = theObject.Monto,
+                    enable = theObject.Enable,
+                    idlocal = theObject.Local.ID,
+                    descuento = theObject.descuento,
+                    iva = theObject.iva,
+                    idpersonal = theObject.vendedor.ID,
+                    Description = theObject.Description
+
+
+                }) > 0;
+            }
+        }
+
+        public bool Update(ReciboData theObject)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Disable(Guid idObject)
+        {
+            using (var con = ConnectionFactory.CreateConnection(_connectionString))
+            {
+                var sql = @"	update recibo set Enable = '0' where id  = @id;
+                        SELECT @@ROWCOUNT;";
+                return con.QueryFirstOrDefault<int>(sql, new { id =idObject}) > 0;
+            }
+        }
+
+        public bool Enable(Guid idObject)
+        {
+            using (var con = ConnectionFactory.CreateConnection(_connectionString))
+            {
+                var sql = @"	update recibo set Enable = '1' where id  = @id;
+                        SELECT @@ROWCOUNT;";
+                return con.QueryFirstOrDefault<int>(sql, new { id = idObject }) > 0;
+            }
+        }
+
+        public List<ReciboData> GetAll()
+        {
+            using (var con = ConnectionFactory.CreateConnection(_connectionString))
+            {
+                var sql = "Select " + @DEFAULT_SELECT;
+                IEnumerable<ReciboData> resultado = con.Query<ReciboData, ClienteData, LocalData, PersonalData, ReciboData>(sql,
+                        (op, proveedor, local, personal) =>
+                        {
+                            op.tercero = proveedor;
+                            op.Local = local;
+                            op.vendedor = personal;
+                            return op;
+
+                        });
+                return resultado.ToList();
+            }
+        }
+
+        public ReciboData GetByID(Guid idObject)
+        {
+            using (var con = ConnectionFactory.CreateConnection(_connectionString))
+            {
+                ReciboData aux =
+                   con.Query<ReciboData, ClienteData, LocalData, PersonalData, ReciboData>(
+                       "SELECT " + @DEFAULT_SELECT + " Where re.id= @id ",
+                       (op, proveedor, local, personal) =>
+                       {
+                           op.tercero = proveedor;
+                           op.Local = local;
+                           op.vendedor = personal;
+                           return op;
+
+                       }, new { id = idObject }).FirstOrDefault();
+                return aux ?? new ReciboData();
+            }
+        }
+        //
+        public ReciboData GetLast(Guid idLocal, int Prefix)
+        {
+            using (var con = ConnectionFactory.CreateConnection(_connectionString))
+            {
+               
+
+                ReciboData aux =
+                   con.Query<ReciboData, ClienteData, LocalData, PersonalData, ReciboData>(
+<<<<<<< HEAD
+                       @"select  top 1 " + DEFAULT_SELECT + @"  where idlocal = @idlocal and Prefix = @first and Numero = (select  max(Numero) as 'Numero' 
+                                        from recibo where idlocal = @Local and Prefix = @first  )",
+=======
+                       @"select  top 1 " + DEFAULT_SELECT + @"  where idlocal = @idlocal and Prefix = @Prefix and Numero = (select  max(Numero) as 'Numero' 
+                                        from recibo where idlocal = @idLocal and Prefix = @Prefix  )",
+>>>>>>> 5ba60578442e905f4bd4b30f7e9aae264ab810e0
+                       (op, proveedor, local, personal) =>
+                       {
+                           op.tercero = proveedor;
+                           op.Local = local;
+                           op.vendedor = personal;
+                           return op;
+
+                       }, new { idLocal = idLocal, Prefix = Prefix }).FirstOrDefault();
+                return aux ?? new ReciboData();
+            }
+        }
+
+        public List<ReciboData> GetByRangoFecha(DateTime fecha1, DateTime fecha2, Guid idLocal, int Prefix)
+        {
+            using (var con = ConnectionFactory.CreateConnection(_connectionString))
+            {
+<<<<<<< HEAD
+                var sql = "select " + DEFAULT_SELECT + @" Where re.Local = @Local and re.Date>=@fecha1 and re.Date<=@fecha2 and re.Prefix=@Prefix";
+=======
+                var sql = "select " + DEFAULT_SELECT + @" Where re.idLocal = @idLocal and re.Date>=@fecha1 and re.Date<=@fecha2 and re.Prefix=@Prefix";
+>>>>>>> 5ba60578442e905f4bd4b30f7e9aae264ab810e0
+                IEnumerable<ReciboData> resultado = con.Query<ReciboData, ClienteData, LocalData, PersonalData, ReciboData>(sql,
+                    (op, proveedor, local, personal) =>
+                       {
+                           op.tercero = proveedor;
+                           op.Local = local;
+                           op.vendedor = personal;
+                           return op;
+
+                       },
+                       new { idLocal = idLocal, fecha1 = fecha1, fecha2 = fecha2 ,prefix=Prefix});
+                return resultado.ToList();
+            }
+        }
+
+        public List<ReciboData> GetBiggerThan(int ultimo, Guid idLocal, int prefix)
+        {
+            using (var con = ConnectionFactory.CreateConnection(_connectionString))
+            {
+<<<<<<< HEAD
+                var sql = "select " + DEFAULT_SELECT + @" Where re.Local = @Local and re.Numero >@ultimo and re.Prefix = @Prefix";
+=======
+                var sql = "select " + DEFAULT_SELECT + @" Where re.idLocal = @idLocal and re.Numero >@ultimo and re.Prefix = @Prefix";
+>>>>>>> 5ba60578442e905f4bd4b30f7e9aae264ab810e0
+                IEnumerable<ReciboData> resultado = con.Query<ReciboData, ClienteData, LocalData, PersonalData, ReciboData>(sql,
+                    (op, proveedor, local, personal) =>
+                    {
+                        op.tercero = proveedor;
+                        op.Local = local;
+                        op.vendedor = personal;
+                        return op;
+
+                    },
+                      new { ultimo = ultimo, idLocal = idLocal, prefix = prefix });
+                return resultado.ToList();
+            }
+        }
+
+        public List<ReciboData> GetOlderThan(DateTime ultimo, Guid idLocal, int prefix)
+        {
+            using (var con = ConnectionFactory.CreateConnection(_connectionString))
+            {
+<<<<<<< HEAD
+                var sql = "select " + DEFAULT_SELECT + @" Where re.Local = @Local and re.Date >@ultimo and re.Prefix = @Prefix";
+=======
+                var sql = "select " + DEFAULT_SELECT + @" Where re.idLocal = @idLocal and re.Date >@ultimo and re.Prefix = @Prefix";
+>>>>>>> 5ba60578442e905f4bd4b30f7e9aae264ab810e0
+                IEnumerable<ReciboData> resultado = con.Query<ReciboData, ClienteData, LocalData, PersonalData, ReciboData>(sql,
+                    (op, proveedor, local, personal) =>
+                    {
+                        op.tercero = proveedor;
+                        op.Local = local;
+                        op.vendedor = personal;
+                        return op;
+
+                    },
+                      new { ultimo = ultimo, idLocal = idLocal, prefix = prefix });
+                return resultado.ToList();
+            }
+        }
+
+       public override string DEFAULT_SELECT
+       {
+           get
+           {
+               return @"  re.*,p.*,locales.*,Personal.*
+from recibo re
+inner join clientes p on re.idCliente = p.id
+inner join locales on re.idlocal = locales.id
+inner join Personal on re.idpersonal = Personal.id ";
+           }
+       }
+    }
+}

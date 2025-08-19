@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{725F298F-AF5D-468F-94A4-6D5AACDAB9A6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Repository</RootNamespace>
+    <AssemblyName>Repository</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.2\lib\net40\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjectDumper">
+      <HintPath>..\packages\ObjectDumper.1.0.0.12\lib\net35-Client\ObjectDumper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Repositories\AdministracionRepository\IRetiroRepository.cs" />
+    <Compile Include="Repositories\AdministracionRepository\IIngresoRepository.cs" />
+    <Compile Include="Repositories\AdministracionRepository\IngresoRepository.cs" />
+    <Compile Include="Repositories\AdministracionRepository\ITipoRetiroRepository.cs" />
+    <Compile Include="Repositories\AdministracionRepository\ITipoIngresoRepository.cs" />
+    <Compile Include="Repositories\AdministracionRepository\RetiroRepository.cs" />
+    <Compile Include="Repositories\AdministracionRepository\TipoIngresoRepository.cs" />
+    <Compile Include="Repositories\AdministracionRepository\TipoRetiroRepository.cs" />
+    <Compile Include="Repositories\BancosRepository\BancoRepository.cs" />
+    <Compile Include="Repositories\BancosRepository\IBancoRepository.cs" />
+    <Compile Include="Repositories\CajaRepository\CajaRepository.cs" />
+    <Compile Include="Repositories\CajaRepository\ICajaRepository.cs" />
+    <Compile Include="Repositories\ChequeraRepository\ChequeraRepository.cs" />
+    <Compile Include="Repositories\ChequeraRepository\IChequeraRepository.cs" />
+    <Compile Include="Repositories\ChequeRepository\ChequeRepository.cs" />
+    <Compile Include="Repositories\ChequeRepository\IChequeRepository.cs" />
+    <Compile Include="Repositories\ClienteRepository\ClienteRepository.cs" />
+    <Compile Include="Repositories\ClienteRepository\IClienteRepository.cs" />
+    <Compile Include="Repositories\PuntoControlStockRepository\IPuntoControlStockDetalleRepository.cs" />
+    <Compile Include="Repositories\PuntoControlStockRepository\IPuntoControlStockRepository.cs" />
+    <Compile Include="Repositories\PuntoControlStockRepository\PuntoControlStockDetalleRepository.cs" />
+    <Compile Include="Repositories\PuntoControlStockRepository\PuntoControlStockRepository.cs" />
+    <Compile Include="Repositories\TributoRepository\TributoNotaCreditoProveedoresRepository.cs" />
+    <Compile Include="Repositories\TributoRepository\TributoNotaCreditoClientesRepository.cs" />
+    <Compile Include="Repositories\TributoRepository\TributoNotaDebitoProveedoresRepository.cs" />
+    <Compile Include="Repositories\TributoRepository\TributoRepository.cs" />
+    <Compile Include="Repositories\ColoresRepository\ColorRepository.cs" />
+    <Compile Include="Repositories\ColoresRepository\IColorRepository.cs" />
+    <Compile Include="Repositories\ComprasProveedoresRepository\CompraProveedoresDetalleRepository.cs" />
+    <Compile Include="Repositories\ComprasProveedoresRepository\ComprasProveedoresRepository.cs" />
+    <Compile Include="Repositories\ComprasProveedoresRepository\ICompraProveedoresDetalleRepository.cs" />
+    <Compile Include="Repositories\ComprasProveedoresRepository\IComprasProveedoresRepository.cs" />
+    <Compile Include="Repositories\CondicionVentaRepository\CondicionVentaRepository.cs" />
+    <Compile Include="Repositories\CondicionIVaRepository\CondicionIVARepository.cs" />
+    <Compile Include="Repositories\CuentaRepository\CuentaRepository.cs" />
+    <Compile Include="Repositories\CuentaRepository\ICuentaRepository.cs" />
+    <Compile Include="DbRepository.cs" />
+    <Compile Include="Repositories\ConnectionFactoryStuff\ConnectionException.cs" />
+    <Compile Include="Repositories\ConnectionFactoryStuff\ConnectionFactory.cs" />
+    <Compile Include="Repositories\ConnectionFactoryStuff\Extensions.cs" />
+    <Compile Include="Ext.cs" />
+    <Compile Include="Repositories\FormaPagoRepository\FormaPagoCuotasRepository.cs" />
+    <Compile Include="Repositories\FormaPagoRepository\FormaPagoRepository.cs" />
+    <Compile Include="Repositories\FormaPagoRepository\IFormaPagoCuotasRepository.cs" />
+    <Compile Include="Repositories\FormaPagoRepository\IFormaPagoRepository.cs" />
+    <Compile Include="Repositories\IGenericRepository.cs" />
+    <Compile Include="Repositories\LineaRepository\ILineaRepository.cs" />
+    <Compile Include="Repositories\LineaRepository\LineaRepository.cs" />
+    <Compile Include="Repositories\ListaPrecioRepository\IListaPrecioRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ListaPrecioRepository\ListaPrecioRepository.cs" />
+    <Compile Include="Repositories\MiRazonRepository\MiRazonRepository.cs" />
+    <Compile Include="Repositories\LocalRepository\ILocalRepository.cs" />
+    <Compile Include="Repositories\LocalRepository\LocalRepository.cs" />
+    <Compile Include="Repositories\MovimientoRepository\IMovimientoRepository.cs" />
+    <Compile Include="Repositories\MovimientoRepository\MovimientoRepository.cs" />
+    <Compile Include="Repositories\NotasRepository\Cliente\Credito\NotaCreditoClienteDetalleRepository.cs" />
+    <Compile Include="Repositories\NotasRepository\Cliente\Credito\NotaCreditoClienteRepository.cs" />
+    <Compile Include="Repositories\NotasRepository\Cliente\Debito\NotaDebitoClienteDetalleRepository.cs" />
+    <Compile Include="Repositories\NotasRepository\Cliente\Debito\NotaDebitoClienteRepository.cs" />
+    <Compile Include="Repositories\NotasRepository\INotaDetalleRepository.cs" />
+    <Compile Include="Repositories\NotasRepository\INotaRepository.cs" />
+    <Compile Include="Repositories\NotasRepository\Proveedor\Credito\NotaCreditoProveedoresDetalleRepository.cs" />
+    <Compile Include="Repositories\NotasRepository\Proveedor\Credito\NotaCreditoProveedoresRepository.cs" />
+    <Compile Include="Repositories\NotasRepository\Proveedor\Debito\NotaDebitoProveedoresDetalleRepository.cs" />
+    <Compile Include="Repositories\NotasRepository\Proveedor\Debito\NotaDebitoProveedoresRepository.cs" />
+    <Compile Include="Repositories\OrdenPagoRepository\IOrdenPagoDetalleRepository.cs" />
+    <Compile Include="Repositories\OrdenPagoRepository\IOrdenPagoRepository.cs" />
+    <Compile Include="Repositories\OrdenPagoRepository\OrdenPagoDetalleRepository.cs" />
+    <Compile Include="Repositories\OrdenPagoRepository\OrdenPagoRepository.cs" />
+    <Compile Include="Repositories\PagosRepository\IPagosRepository.cs" />
+    <Compile Include="Repositories\PagosRepository\PagosRepository.cs" />
+    <Compile Include="Repositories\PedidoRepository\IPedidoDetalleRepository.cs" />
+    <Compile Include="Repositories\PedidoRepository\IPedidoRepository.cs" />
+    <Compile Include="Repositories\PedidoRepository\PedidoDetalleRepository.cs" />
+    <Compile Include="Repositories\PedidoRepository\PedidoRepository.cs" />
+    <Compile Include="Repositories\PersonalRepository\IPersonalRepository.cs" />
+    <Compile Include="Repositories\PersonalRepository\PersonalRepository.cs" />
+    <Compile Include="Repositories\PrecioRepository\IPrecioRepository.cs" />
+    <Compile Include="Repositories\PrecioRepository\PrecioRepository.cs" />
+    <Compile Include="Repositories\ProductoRepository\IMetrosTalleRepository.cs" />
+    <Compile Include="Repositories\ProductoRepository\IProductoRepository.cs" />
+    <Compile Include="Repositories\ProductoRepository\IProductoTalleRepository.cs" />
+    <Compile Include="Repositories\ProductoRepository\ProductoRepository.cs" />
+    <Compile Include="Repositories\ProductoRepository\ProductoTalleRepository.cs" />
+    <Compile Include="Repositories\ProveedorRepository\IProveedorRepository.cs" />
+    <Compile Include="Repositories\ProveedorRepository\ProveedorRepository.cs" />
+    <Compile Include="Repositories\ReciboRepository\IReciboDetalleRepository.cs" />
+    <Compile Include="Repositories\ReciboRepository\IReciboRepository.cs" />
+    <Compile Include="Repositories\ReciboRepository\ReciboDetalleRepository.cs" />
+    <Compile Include="Repositories\ReciboRepository\ReciboRepository.cs" />
+    <Compile Include="Repositories\RemitoRepository\IRemitoDetalleRepository.cs" />
+    <Compile Include="Repositories\RemitoRepository\IRemitoRepository.cs" />
+    <Compile Include="Repositories\RemitoRepository\RemitoDetalleRepository.cs" />
+    <Compile Include="Repositories\RemitoRepository\RemitoRepository.cs" />
+    <Compile Include="Repositories\StockRepository\IStockRepository.cs" />
+    <Compile Include="Repositories\StockRepository\StockRepository.cs" />
+    <Compile Include="Repositories\TalleMetrosRepository\ITalleMetrosRepository.cs" />
+    <Compile Include="Repositories\TalleMetrosRepository\TalleMetrosRepository.cs" />
+    <Compile Include="Repositories\TeporadaRepository\ITemporadaRepository.cs" />
+    <Compile Include="Repositories\TeporadaRepository\TemporadaRepository.cs" />
+    <Compile Include="Repositories\TributoRepository\TributoVentaRepository.cs" />
+    <Compile Include="Repositories\TributoRepository\TributoNotaDebitoClientesRepository.cs" />
+    <Compile Include="Repositories\TributoRepository\TributoCompraProveedoresRepository.cs" />
+    <Compile Include="Repositories\UsuarioRepository\IUsuarioRepository.cs" />
+    <Compile Include="Repositories\UsuarioRepository\UsuarioRepository.cs" />
+    <Compile Include="Repositories\ValeRepository\IValeRepository.cs" />
+    <Compile Include="Repositories\ValeRepository\ValeRepository.cs" />
+    <Compile Include="Repositories\VentaRepository\IVentaDetalleRepository.cs" />
+    <Compile Include="Repositories\VentaRepository\IVentaRepository.cs" />
+    <Compile Include="Repositories\VentaRepository\VentaDetalleRepository.cs" />
+    <Compile Include="Repositories\VentaRepository\VentaRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{CA8BFA2D-C693-4405-A12A-7426DBCC9882}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ObjectDumper</name>
+    </assembly>
+    <members>
+        <member name="T:System.Diagnostics.ObjectDumper">
+            <summary>
+            Source: http://stackoverflow.com/questions/852181/c-printing-all-properties-of-an-object
+            </summary>
+        </member>
+    </members>
+</doc>

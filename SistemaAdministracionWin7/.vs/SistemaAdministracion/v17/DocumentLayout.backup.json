@@ -1,0 +1,874 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4DD50E88-999A-4AD8-9A02-EEFDDBE51B90}|PuntoVenta\\PuntoVenta.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\puntoventa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DD50E88-999A-4AD8-9A02-EEFDDBE51B90}|PuntoVenta\\PuntoVenta.csproj|solutionrelative:puntoventa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\sharedforms\\estadisticas\\stock\\detallestocklocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\estadisticas\\stock\\detallestocklocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\sharedforms\\estadisticas\\stock\\detallestocklocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\estadisticas\\stock\\detallestocklocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DD50E88-999A-4AD8-9A02-EEFDDBE51B90}|PuntoVenta\\PuntoVenta.csproj|c:\\work\\control stock\\sistemaadministracionwin7\\puntoventa\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4DD50E88-999A-4AD8-9A02-EEFDDBE51B90}|PuntoVenta\\PuntoVenta.csproj|solutionrelative:puntoventa\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725F298F-AF5D-468F-94A4-6D5AACDAB9A6}|Repository\\Repository.csproj|c:\\work\\control stock\\sistemaadministracionwin7\\repository\\repositories\\remitorepository\\remitorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{725F298F-AF5D-468F-94A4-6D5AACDAB9A6}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\remitorepository\\remitorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF08246-9E49-4F5B-8E84-89FFC9D6BCE6}|Services\\Services.csproj|c:\\work\\control stock\\sistemaadministracionwin7\\services\\remitoservice\\remitoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF08246-9E49-4F5B-8E84-89FFC9D6BCE6}|Services\\Services.csproj|solutionrelative:services\\remitoservice\\remitoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|c:\\work\\control stock\\sistemaadministracionwin7\\sharedforms\\stock\\abmremitos\\altastock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\stock\\abmremitos\\altastock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\sharedforms\\stock\\abmremitos\\altastock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\stock\\abmremitos\\altastock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4100EAF8-755C-480E-B290-7F95254B6223}|Central\\Central.csproj|c:\\work\\control stock\\sistemaadministracionwin7\\central\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{4100EAF8-755C-480E-B290-7F95254B6223}|Central\\Central.csproj|solutionrelative:central\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\sharedforms\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\sharedforms\\stock\\abmremitos\\bajastock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\stock\\abmremitos\\bajastock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\sharedforms\\stock\\abmremitos\\bajastock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\stock\\abmremitos\\bajastock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4100EAF8-755C-480E-B290-7F95254B6223}|Central\\Central.csproj|c:\\work\\control stock\\sistemaadministracionwin7\\central\\padre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4100EAF8-755C-480E-B290-7F95254B6223}|Central\\Central.csproj|solutionrelative:central\\padre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4100EAF8-755C-480E-B290-7F95254B6223}|Central\\Central.csproj|c:\\work\\control stock\\sistemaadministracionwin7\\central\\padre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4100EAF8-755C-480E-B290-7F95254B6223}|Central\\Central.csproj|solutionrelative:central\\padre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DD50E88-999A-4AD8-9A02-EEFDDBE51B90}|PuntoVenta\\PuntoVenta.csproj|c:\\work\\control stock\\sistemaadministracionwin7\\puntoventa\\padre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DD50E88-999A-4AD8-9A02-EEFDDBE51B90}|PuntoVenta\\PuntoVenta.csproj|solutionrelative:puntoventa\\padre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DD50E88-999A-4AD8-9A02-EEFDDBE51B90}|PuntoVenta\\PuntoVenta.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\puntoventa\\padre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4DD50E88-999A-4AD8-9A02-EEFDDBE51B90}|PuntoVenta\\PuntoVenta.csproj|solutionrelative:puntoventa\\padre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725F298F-AF5D-468F-94A4-6D5AACDAB9A6}|Repository\\Repository.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\repository\\repositories\\stockrepository\\stockrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{725F298F-AF5D-468F-94A4-6D5AACDAB9A6}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\stockrepository\\stockrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF08246-9E49-4F5B-8E84-89FFC9D6BCE6}|Services\\Services.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\services\\stockservice\\stockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF08246-9E49-4F5B-8E84-89FFC9D6BCE6}|Services\\Services.csproj|solutionrelative:services\\stockservice\\stockservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\sharedforms\\ventas\\agregarformapago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\ventas\\agregarformapago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\sharedforms\\ventas\\ventamenor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\ventas\\ventamenor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\sharedforms\\ventas\\ventamenor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\ventas\\ventamenor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\sharedforms\\ventas\\ventamayor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\ventas\\ventamayor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF08246-9E49-4F5B-8E84-89FFC9D6BCE6}|Services\\Services.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\services\\abstractservice\\fatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF08246-9E49-4F5B-8E84-89FFC9D6BCE6}|Services\\Services.csproj|solutionrelative:services\\abstractservice\\fatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\sharedforms\\stock\\articulos\\articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\stock\\articulos\\articulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\sharedforms\\impositivo\\retiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\impositivo\\retiro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\sharedforms\\impositivo\\modificarcajacascada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\impositivo\\modificarcajacascada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DD50E88-999A-4AD8-9A02-EEFDDBE51B90}|PuntoVenta\\PuntoVenta.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\puntoventa\\estadisticas\\ventaxfecha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DD50E88-999A-4AD8-9A02-EEFDDBE51B90}|PuntoVenta\\PuntoVenta.csproj|solutionrelative:puntoventa\\estadisticas\\ventaxfecha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DD50E88-999A-4AD8-9A02-EEFDDBE51B90}|PuntoVenta\\PuntoVenta.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\puntoventa\\estadisticas\\ventaxfecha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4DD50E88-999A-4AD8-9A02-EEFDDBE51B90}|PuntoVenta\\PuntoVenta.csproj|solutionrelative:puntoventa\\estadisticas\\ventaxfecha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725F298F-AF5D-468F-94A4-6D5AACDAB9A6}|Repository\\Repository.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\repository\\repositories\\cajarepository\\icajarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{725F298F-AF5D-468F-94A4-6D5AACDAB9A6}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\cajarepository\\icajarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\sharedforms\\estadisticas\\cajas\\cajaxfecha2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\estadisticas\\cajas\\cajaxfecha2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\sharedforms\\impositivo\\ingreso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\impositivo\\ingreso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\sharedforms\\padrebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\padrebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\sharedforms\\ventas\\agregarformapago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\ventas\\agregarformapago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725F298F-AF5D-468F-94A4-6D5AACDAB9A6}|Repository\\Repository.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\repository\\repositories\\clienterepository\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{725F298F-AF5D-468F-94A4-6D5AACDAB9A6}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\clienterepository\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DD50E88-999A-4AD8-9A02-EEFDDBE51B90}|PuntoVenta\\PuntoVenta.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\puntoventa\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DD50E88-999A-4AD8-9A02-EEFDDBE51B90}|PuntoVenta\\PuntoVenta.csproj|solutionrelative:puntoventa\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725F298F-AF5D-468F-94A4-6D5AACDAB9A6}|Repository\\Repository.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\repository\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{725F298F-AF5D-468F-94A4-6D5AACDAB9A6}|Repository\\Repository.csproj|solutionrelative:repository\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725F298F-AF5D-468F-94A4-6D5AACDAB9A6}|Repository\\Repository.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\repository\\ext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{725F298F-AF5D-468F-94A4-6D5AACDAB9A6}|Repository\\Repository.csproj|solutionrelative:repository\\ext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725F298F-AF5D-468F-94A4-6D5AACDAB9A6}|Repository\\Repository.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\repository\\repositories\\administracionrepository\\ingresorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{725F298F-AF5D-468F-94A4-6D5AACDAB9A6}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\administracionrepository\\ingresorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725F298F-AF5D-468F-94A4-6D5AACDAB9A6}|Repository\\Repository.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\repository\\repositories\\valerepository\\valerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{725F298F-AF5D-468F-94A4-6D5AACDAB9A6}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\valerepository\\valerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725F298F-AF5D-468F-94A4-6D5AACDAB9A6}|Repository\\Repository.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\repository\\repositories\\tributorepository\\tributocompraproveedoresrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{725F298F-AF5D-468F-94A4-6D5AACDAB9A6}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\tributorepository\\tributocompraproveedoresrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{725F298F-AF5D-468F-94A4-6D5AACDAB9A6}|Repository\\Repository.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\repository\\repositories\\ventarepository\\ventarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{725F298F-AF5D-468F-94A4-6D5AACDAB9A6}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\ventarepository\\ventarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\sharedforms\\estadisticas\\stock\\stockbusqueda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\estadisticas\\stock\\stockbusqueda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\sharedforms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\sharedforms\\stock\\abmremitos\\altamanual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\stock\\abmremitos\\altamanual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\sharedforms\\stock\\puntocontrol\\puntocontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\stock\\puntocontrol\\puntocontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\sharedforms\\stock\\puntocontrol\\puntocontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\stock\\puntocontrol\\puntocontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\sharedforms\\stock\\abmremitos\\stockbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\stock\\abmremitos\\stockbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF08246-9E49-4F5B-8E84-89FFC9D6BCE6}|Services\\Services.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\services\\usuarioservice\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF08246-9E49-4F5B-8E84-89FFC9D6BCE6}|Services\\Services.csproj|solutionrelative:services\\usuarioservice\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\sharedforms\\ventas\\ventabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\ventas\\ventabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\sharedforms\\ventas\\ventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\ventas\\ventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\sharedforms\\stock\\abmremitos\\altamanual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E0EFCC0-5572-409D-AF50-AF5E3A39D224}|SharedForms\\SharedForms.csproj|solutionrelative:sharedforms\\stock\\abmremitos\\altamanual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA8BFA2D-C693-4405-A12A-7426DBCC9882}|DTO\\DTO.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\dto\\businessentities\\ventadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA8BFA2D-C693-4405-A12A-7426DBCC9882}|DTO\\DTO.csproj|solutionrelative:dto\\businessentities\\ventadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CF08246-9E49-4F5B-8E84-89FFC9D6BCE6}|Services\\Services.csproj|C:\\Work\\Control Stock\\SistemaAdministracionWin7\\services\\helperservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CF08246-9E49-4F5B-8E84-89FFC9D6BCE6}|Services\\Services.csproj|solutionrelative:services\\helperservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AltaStock.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Stock\\ABMRemitos\\AltaStock.cs",
+              "RelativeDocumentMoniker": "SharedForms\\Stock\\ABMRemitos\\AltaStock.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Stock\\ABMRemitos\\AltaStock.cs",
+              "RelativeToolTip": "SharedForms\\Stock\\ABMRemitos\\AltaStock.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAYwIwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T17:54:35.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\PuntoVenta\\App.config",
+              "RelativeDocumentMoniker": "PuntoVenta\\App.config",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\PuntoVenta\\App.config",
+              "RelativeToolTip": "PuntoVenta\\App.config",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-17T17:53:50.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "cajaxfecha2.cs [Design]",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Estadisticas\\Cajas\\cajaxfecha2.cs",
+              "RelativeDocumentMoniker": "SharedForms\\Estadisticas\\Cajas\\cajaxfecha2.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Estadisticas\\Cajas\\cajaxfecha2.cs [Design]",
+              "RelativeToolTip": "SharedForms\\Estadisticas\\Cajas\\cajaxfecha2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T14:14:06.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "detallestockLocal.cs [Design]",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Estadisticas\\Stock\\detallestockLocal.cs",
+              "RelativeDocumentMoniker": "SharedForms\\Estadisticas\\Stock\\detallestockLocal.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Estadisticas\\Stock\\detallestockLocal.cs [Design]",
+              "RelativeToolTip": "SharedForms\\Estadisticas\\Stock\\detallestockLocal.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T18:58:31.583Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "StockService.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Services\\StockService\\StockService.cs",
+              "RelativeDocumentMoniker": "Services\\StockService\\StockService.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Services\\StockService\\StockService.cs",
+              "RelativeToolTip": "Services\\StockService\\StockService.cs",
+              "ViewState": "AgIAAMYAAAAAAAAAAAASwN4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T12:55:05.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "StockRepository.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Repository\\Repositories\\StockRepository\\StockRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\StockRepository\\StockRepository.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Repository\\Repositories\\StockRepository\\StockRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\StockRepository\\StockRepository.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAASwIwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T19:58:34.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AltaStock.cs [Design]",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Stock\\ABMRemitos\\AltaStock.cs",
+              "RelativeDocumentMoniker": "SharedForms\\Stock\\ABMRemitos\\AltaStock.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Stock\\ABMRemitos\\AltaStock.cs [Design]",
+              "RelativeToolTip": "SharedForms\\Stock\\ABMRemitos\\AltaStock.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T18:57:03.071Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "detallestockLocal.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Estadisticas\\Stock\\detallestockLocal.cs",
+              "RelativeDocumentMoniker": "SharedForms\\Estadisticas\\Stock\\detallestockLocal.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Estadisticas\\Stock\\detallestockLocal.cs",
+              "RelativeToolTip": "SharedForms\\Estadisticas\\Stock\\detallestockLocal.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAYwEoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T18:51:27.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\PuntoVenta\\Program.cs",
+              "RelativeDocumentMoniker": "PuntoVenta\\Program.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\PuntoVenta\\Program.cs",
+              "RelativeToolTip": "PuntoVenta\\Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAYwBwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T18:57:47.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RemitoService.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Services\\RemitoService\\RemitoService.cs",
+              "RelativeDocumentMoniker": "Services\\RemitoService\\RemitoService.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Services\\RemitoService\\RemitoService.cs",
+              "RelativeToolTip": "Services\\RemitoService\\RemitoService.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAYwHUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T17:56:00.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RemitoRepository.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Repository\\Repositories\\RemitoRepository\\RemitoRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\RemitoRepository\\RemitoRepository.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Repository\\Repositories\\RemitoRepository\\RemitoRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\RemitoRepository\\RemitoRepository.cs",
+              "ViewState": "AgIAAOIAAAAAAAAAAAAYwOgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T17:59:20.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "agregarFormaPago.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Ventas\\agregarFormaPago.cs",
+              "RelativeDocumentMoniker": "SharedForms\\Ventas\\agregarFormaPago.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Ventas\\agregarFormaPago.cs",
+              "RelativeToolTip": "SharedForms\\Ventas\\agregarFormaPago.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAASwDcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T14:56:53.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "padre.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\PuntoVenta\\padre.cs",
+              "RelativeDocumentMoniker": "PuntoVenta\\padre.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\PuntoVenta\\padre.cs",
+              "RelativeToolTip": "PuntoVenta\\padre.cs",
+              "ViewState": "AgIAAFMBAAAAAAAAAAASwGoBAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T13:58:07.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BajaStock.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Stock\\ABMRemitos\\BajaStock.cs",
+              "RelativeDocumentMoniker": "SharedForms\\Stock\\ABMRemitos\\BajaStock.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Stock\\ABMRemitos\\BajaStock.cs",
+              "RelativeToolTip": "SharedForms\\Stock\\ABMRemitos\\BajaStock.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAYwB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T18:57:08.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BajaStock.cs [Design]",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Stock\\ABMRemitos\\BajaStock.cs",
+              "RelativeDocumentMoniker": "SharedForms\\Stock\\ABMRemitos\\BajaStock.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Stock\\ABMRemitos\\BajaStock.cs [Design]",
+              "RelativeToolTip": "SharedForms\\Stock\\ABMRemitos\\BajaStock.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T18:57:05.352Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "app.config",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Central\\app.config",
+              "RelativeDocumentMoniker": "Central\\app.config",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Central\\app.config",
+              "RelativeToolTip": "Central\\app.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-07-17T17:45:42.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "app.config",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\app.config",
+              "RelativeDocumentMoniker": "SharedForms\\app.config",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\app.config",
+              "RelativeToolTip": "SharedForms\\app.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-03-28T18:57:34.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "padre.cs [Design]",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Central\\padre.cs",
+              "RelativeDocumentMoniker": "Central\\padre.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Central\\padre.cs [Design]",
+              "RelativeToolTip": "Central\\padre.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T17:37:05.255Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "padre.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Central\\padre.cs",
+              "RelativeDocumentMoniker": "Central\\padre.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Central\\padre.cs",
+              "RelativeToolTip": "Central\\padre.cs",
+              "ViewState": "AgIAAIcBAAAAAAAAAAAYwJUBAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T17:37:09.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ventaMenor.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Ventas\\ventaMenor.cs",
+              "RelativeDocumentMoniker": "SharedForms\\Ventas\\ventaMenor.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Ventas\\ventaMenor.cs",
+              "RelativeToolTip": "SharedForms\\Ventas\\ventaMenor.cs",
+              "ViewState": "AgIAAAgBAAAAAAAAAAASwBkBAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T20:08:28.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ventaMenor.cs [Design]",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Ventas\\ventaMenor.cs",
+              "RelativeDocumentMoniker": "SharedForms\\Ventas\\ventaMenor.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Ventas\\ventaMenor.cs [Design]",
+              "RelativeToolTip": "SharedForms\\Ventas\\ventaMenor.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T15:13:29.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "padre.cs [Design]",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\PuntoVenta\\padre.cs",
+              "RelativeDocumentMoniker": "PuntoVenta\\padre.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\PuntoVenta\\padre.cs [Design]",
+              "RelativeToolTip": "PuntoVenta\\padre.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T20:14:01.772Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ventaMayor.cs [Design]",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Ventas\\ventaMayor.cs",
+              "RelativeDocumentMoniker": "SharedForms\\Ventas\\ventaMayor.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Ventas\\ventaMayor.cs [Design]",
+              "RelativeToolTip": "SharedForms\\Ventas\\ventaMayor.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T20:51:57.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "retiro.cs [Design]",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Impositivo\\retiro.cs",
+              "RelativeDocumentMoniker": "SharedForms\\Impositivo\\retiro.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Impositivo\\retiro.cs [Design]",
+              "RelativeToolTip": "SharedForms\\Impositivo\\retiro.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T14:14:16.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ModificarCajaCascada.cs [Design]",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Impositivo\\ModificarCajaCascada.cs",
+              "RelativeDocumentMoniker": "SharedForms\\Impositivo\\ModificarCajaCascada.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Impositivo\\ModificarCajaCascada.cs [Design]",
+              "RelativeToolTip": "SharedForms\\Impositivo\\ModificarCajaCascada.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T14:33:48.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ICajaRepository.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Repository\\Repositories\\CajaRepository\\ICajaRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\CajaRepository\\ICajaRepository.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Repository\\Repositories\\CajaRepository\\ICajaRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\CajaRepository\\ICajaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T18:05:43.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "FatherService.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Services\\AbstractService\\FatherService.cs",
+              "RelativeDocumentMoniker": "Services\\AbstractService\\FatherService.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Services\\AbstractService\\FatherService.cs",
+              "RelativeToolTip": "Services\\AbstractService\\FatherService.cs",
+              "ViewState": "AgIAACIBAAAAAAAAAAAYwDABAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T12:55:35.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Articulos.cs [Design]",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Stock\\Articulos\\Articulos.cs",
+              "RelativeDocumentMoniker": "SharedForms\\Stock\\Articulos\\Articulos.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Stock\\Articulos\\Articulos.cs [Design]",
+              "RelativeToolTip": "SharedForms\\Stock\\Articulos\\Articulos.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T18:26:51.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ventaxfecha.cs [Design]",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\PuntoVenta\\Estadisticas\\ventaxfecha.cs",
+              "RelativeDocumentMoniker": "PuntoVenta\\Estadisticas\\ventaxfecha.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\PuntoVenta\\Estadisticas\\ventaxfecha.cs [Design]",
+              "RelativeToolTip": "PuntoVenta\\Estadisticas\\ventaxfecha.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T14:16:37.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ventaxfecha.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\PuntoVenta\\Estadisticas\\ventaxfecha.cs",
+              "RelativeDocumentMoniker": "PuntoVenta\\Estadisticas\\ventaxfecha.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\PuntoVenta\\Estadisticas\\ventaxfecha.cs",
+              "RelativeToolTip": "PuntoVenta\\Estadisticas\\ventaxfecha.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAEwGQAAAB2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T14:16:39.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ingreso.cs [Design]",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Impositivo\\ingreso.cs",
+              "RelativeDocumentMoniker": "SharedForms\\Impositivo\\ingreso.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Impositivo\\ingreso.cs [Design]",
+              "RelativeToolTip": "SharedForms\\Impositivo\\ingreso.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T14:14:15.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "padreBase.cs [Design]",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\padreBase.cs",
+              "RelativeDocumentMoniker": "SharedForms\\padreBase.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\padreBase.cs [Design]",
+              "RelativeToolTip": "SharedForms\\padreBase.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T14:14:25.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "agregarFormaPago.cs [Design]",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Ventas\\agregarFormaPago.cs",
+              "RelativeDocumentMoniker": "SharedForms\\Ventas\\agregarFormaPago.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Ventas\\agregarFormaPago.cs [Design]",
+              "RelativeToolTip": "SharedForms\\Ventas\\agregarFormaPago.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T14:56:42.279Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ClienteRepository.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Repository\\Repositories\\ClienteRepository\\ClienteRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\ClienteRepository\\ClienteRepository.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Repository\\Repositories\\ClienteRepository\\ClienteRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\ClienteRepository\\ClienteRepository.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAApwJ0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T15:25:44.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Settings.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\PuntoVenta\\Settings.cs",
+              "RelativeDocumentMoniker": "PuntoVenta\\Settings.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\PuntoVenta\\Settings.cs",
+              "RelativeToolTip": "PuntoVenta\\Settings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T18:57:46.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Ext.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Repository\\ext.cs",
+              "RelativeDocumentMoniker": "Repository\\ext.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Repository\\ext.cs",
+              "RelativeToolTip": "Repository\\ext.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T19:31:17.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "VentaRepository.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Repository\\Repositories\\VentaRepository\\VentaRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\VentaRepository\\VentaRepository.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Repository\\Repositories\\VentaRepository\\VentaRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\VentaRepository\\VentaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T19:32:00.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ValeRepository.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Repository\\Repositories\\ValeRepository\\ValeRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\ValeRepository\\ValeRepository.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Repository\\Repositories\\ValeRepository\\ValeRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\ValeRepository\\ValeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T19:34:47.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "TributoCompraProveedoresRepository.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Repository\\Repositories\\TributoRepository\\TributoCompraProveedoresRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\TributoRepository\\TributoCompraProveedoresRepository.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Repository\\Repositories\\TributoRepository\\TributoCompraProveedoresRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\TributoRepository\\TributoCompraProveedoresRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T19:36:07.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "IngresoRepository.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Repository\\Repositories\\AdministracionRepository\\IngresoRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\AdministracionRepository\\IngresoRepository.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Repository\\Repositories\\AdministracionRepository\\IngresoRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\AdministracionRepository\\IngresoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T19:39:01.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Repository\\packages.config",
+              "RelativeDocumentMoniker": "Repository\\packages.config",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Repository\\packages.config",
+              "RelativeToolTip": "Repository\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-03-28T19:39:10.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Program.cs",
+              "RelativeDocumentMoniker": "SharedForms\\Program.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Program.cs",
+              "RelativeToolTip": "SharedForms\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T18:57:37.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "UsuarioService.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Services\\UsuarioService\\UsuarioService.cs",
+              "RelativeDocumentMoniker": "Services\\UsuarioService\\UsuarioService.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Services\\UsuarioService\\UsuarioService.cs",
+              "RelativeToolTip": "Services\\UsuarioService\\UsuarioService.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAApwJUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T18:51:27.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "stockBusqueda.cs [Design]",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Estadisticas\\Stock\\stockBusqueda.cs",
+              "RelativeDocumentMoniker": "SharedForms\\Estadisticas\\Stock\\stockBusqueda.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Estadisticas\\Stock\\stockBusqueda.cs [Design]",
+              "RelativeToolTip": "SharedForms\\Estadisticas\\Stock\\stockBusqueda.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T18:58:34.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "puntoControl.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Stock\\PuntoControl\\puntoControl.cs",
+              "RelativeDocumentMoniker": "SharedForms\\Stock\\PuntoControl\\puntoControl.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Stock\\PuntoControl\\puntoControl.cs",
+              "RelativeToolTip": "SharedForms\\Stock\\PuntoControl\\puntoControl.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAqwIUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T14:54:13.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "puntoControl.cs [Design]",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Stock\\PuntoControl\\puntoControl.cs",
+              "RelativeDocumentMoniker": "SharedForms\\Stock\\PuntoControl\\puntoControl.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Stock\\PuntoControl\\puntoControl.cs [Design]",
+              "RelativeToolTip": "SharedForms\\Stock\\PuntoControl\\puntoControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T14:54:09.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "ventaBase.cs [Design]",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Ventas\\ventaBase.cs",
+              "RelativeDocumentMoniker": "SharedForms\\Ventas\\ventaBase.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Ventas\\ventaBase.cs [Design]",
+              "RelativeToolTip": "SharedForms\\Ventas\\ventaBase.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T20:51:56.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "altaManual.cs [Design]",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Stock\\ABMRemitos\\altaManual.cs",
+              "RelativeDocumentMoniker": "SharedForms\\Stock\\ABMRemitos\\altaManual.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Stock\\ABMRemitos\\altaManual.cs [Design]",
+              "RelativeToolTip": "SharedForms\\Stock\\ABMRemitos\\altaManual.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T20:18:59.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "stockBase.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Stock\\ABMRemitos\\stockBase.cs",
+              "RelativeDocumentMoniker": "SharedForms\\Stock\\ABMRemitos\\stockBase.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Stock\\ABMRemitos\\stockBase.cs",
+              "RelativeToolTip": "SharedForms\\Stock\\ABMRemitos\\stockBase.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAqwKoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T18:51:24.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ventas.cs [Design]",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Ventas\\ventas.cs",
+              "RelativeDocumentMoniker": "SharedForms\\Ventas\\ventas.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Ventas\\ventas.cs [Design]",
+              "RelativeToolTip": "SharedForms\\Ventas\\ventas.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T20:51:53.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "altaManual.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Stock\\ABMRemitos\\altaManual.cs",
+              "RelativeDocumentMoniker": "SharedForms\\Stock\\ABMRemitos\\altaManual.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\SharedForms\\Stock\\ABMRemitos\\altaManual.cs",
+              "RelativeToolTip": "SharedForms\\Stock\\ABMRemitos\\altaManual.cs",
+              "ViewState": "AgIAADwBAAAAAAAAAAAlwFABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T15:30:49.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "HelperService.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Services\\HelperService.cs",
+              "RelativeDocumentMoniker": "Services\\HelperService.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\Services\\HelperService.cs",
+              "RelativeToolTip": "Services\\HelperService.cs",
+              "ViewState": "AgIAANkAAAAAAAAAAAAlwOYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T15:23:45.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ventaData.cs",
+              "DocumentMoniker": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\DTO\\BusinessEntities\\ventaData.cs",
+              "RelativeDocumentMoniker": "DTO\\BusinessEntities\\ventaData.cs",
+              "ToolTip": "C:\\Work\\Control Stock\\SistemaAdministracionWin7\\DTO\\BusinessEntities\\ventaData.cs",
+              "RelativeToolTip": "DTO\\BusinessEntities\\ventaData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T19:03:50.438Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

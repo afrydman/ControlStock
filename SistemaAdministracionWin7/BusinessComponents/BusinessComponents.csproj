@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A74E0122-6364-46FB-BB11-FDDE577672C6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusinessComponents</RootNamespace>
+    <AssemblyName>BusinessComponents</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper">
+      <HintPath>..\packages\Dapper.1.50.2\lib\net40\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="banco.cs" />
+    <Compile Include="caja.cs" />
+    <Compile Include="cheque.cs" />
+    <Compile Include="chequera.cs" />
+    <Compile Include="cliente.cs" />
+    <Compile Include="color.cs" />
+    <Compile Include="comprasProveedores.cs" />
+    <Compile Include="conexion.cs" />
+    <Compile Include="cuenta.cs" />
+    <Compile Include="formaPago.cs" />
+    <Compile Include="helper.cs" />
+    <Compile Include="ingreso.cs" />
+    <Compile Include="linea.cs" />
+    <Compile Include="listaPrecio.cs" />
+    <Compile Include="listaPrecioProductoTalle.cs" />
+    <Compile Include="local.cs" />
+    <Compile Include="movimientoCuenta.cs" />
+    <Compile Include="notaCreditoClientes.cs" />
+    <Compile Include="notaProveedores.cs" />
+    <Compile Include="ordePago.cs" />
+    <Compile Include="pedido.cs" />
+    <Compile Include="pedidodetalle.cs" />
+    <Compile Include="personal.cs" />
+    <Compile Include="producto.cs" />
+    <Compile Include="productoTalle.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="proveedor.cs" />
+    <Compile Include="recibo.cs" />
+    <Compile Include="remito.cs" />
+    <Compile Include="reporte.cs" />
+    <Compile Include="retiro.cs" />
+    <Compile Include="stock.cs" />
+    <Compile Include="stockMetros.cs" />
+    <Compile Include="temporada.cs" />
+    <Compile Include="tipoIngreso.cs" />
+    <Compile Include="tipoRetiro.cs" />
+    <Compile Include="usuario.cs" />
+    <Compile Include="vale.cs" />
+    <Compile Include="venta.cs" />
+    <Compile Include="ventaDetalle.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{CA8BFA2D-C693-4405-A12A-7426DBCC9882}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Persistence\Persistence.csproj">
+      <Project>{7CF9AD7D-F6D2-45F6-B9B0-20A7A95D51BB}</Project>
+      <Name>Persistence</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

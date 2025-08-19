@@ -1,0 +1,138 @@
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.csproj.AssemblyReference.cache
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.Estadisticas.Compras.comprasxdia.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.Estadisticas.Compras.comprasxprove.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.GenericForms.CommonFormOneField.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.formasPago.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.Locales.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.Personal.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.PersonalENLocal.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.Auxiliar.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.genericoPersona.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.GenericForms.cuentaCorriente.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.NuevoRecibo.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.resumenCC.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.verRecibo.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.GenericForms.Notas.AgregarItemNota.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.GenericForms.Notas.MostrarNota.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.GenericForms.Nota2.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.notaBase.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.padre.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.printLabel.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.Properties.Resources.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.Proveedores.MostrarcomprasAProveedores.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.Proveedores.comprasAProveedores.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.Proveedores.NuevaOPago.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.Proveedores.resumenCCProveedores.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.Proveedores.verPago.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.Tesoreria.avisosCheques.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.Tesoreria.cartera.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.Tesoreria.chequera.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.Tesoreria.chequesEmitidos.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.Tesoreria.cuentas.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.Tesoreria.Depositocuenta.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.Tesoreria.extraccionCuenta.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.Tesoreria.movimientosCuenta.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.Tesoreria.nuevaCuenta.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.Tesoreria.nuevoCheque.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.Tesoreria.pagoCheque.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.Tesoreria.verCheque.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.Tesoreria.verCuenta.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.Tesoreria.verDeposito.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.TestPrinter.resources
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.csproj.GenerateResource.cache
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.csproj.CoreCompileInputs.cache
+C:\Work\SistemaAdministracion\Central\bin\Debug\Central.exe.config
+C:\Work\SistemaAdministracion\Central\bin\Debug\Central.exe.manifest
+C:\Work\SistemaAdministracion\Central\bin\Debug\Central.application
+C:\Work\SistemaAdministracion\Central\bin\Debug\Central.exe
+C:\Work\SistemaAdministracion\Central\bin\Debug\Central.pdb
+C:\Work\SistemaAdministracion\Central\bin\Debug\Dapper.dll
+C:\Work\SistemaAdministracion\Central\bin\Debug\DTO.dll
+C:\Work\SistemaAdministracion\Central\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Work\SistemaAdministracion\Central\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Work\SistemaAdministracion\Central\bin\Debug\ObjectDumper.dll
+C:\Work\SistemaAdministracion\Central\bin\Debug\Repository.dll
+C:\Work\SistemaAdministracion\Central\bin\Debug\Services.dll
+C:\Work\SistemaAdministracion\Central\bin\Debug\SharedForms.exe
+C:\Work\SistemaAdministracion\Central\bin\Debug\DTO.pdb
+C:\Work\SistemaAdministracion\Central\bin\Debug\Repository.pdb
+C:\Work\SistemaAdministracion\Central\bin\Debug\Services.pdb
+C:\Work\SistemaAdministracion\Central\bin\Debug\SharedForms.pdb
+C:\Work\SistemaAdministracion\Central\bin\Debug\SharedForms.exe.config
+C:\Work\SistemaAdministracion\Central\bin\Debug\Dapper.xml
+C:\Work\SistemaAdministracion\Central\bin\Debug\Microsoft.ReportViewer.WinForms.xml
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.TrustInfo.xml
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.exe.manifest
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.application
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.exe
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.pdb
+C:\Work\SistemaAdministracion\Central\obj\x86\Debug\Central.csproj.Up2Date
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\bin\Debug\Central.exe.config
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\bin\Debug\Central.exe.manifest
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\bin\Debug\Central.application
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\bin\Debug\Central.exe
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\bin\Debug\Central.pdb
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\bin\Debug\Dapper.dll
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\bin\Debug\DTO.dll
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\bin\Debug\ObjectDumper.dll
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\bin\Debug\Repository.dll
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\bin\Debug\Services.dll
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\bin\Debug\SharedForms.exe
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\bin\Debug\DTO.pdb
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\bin\Debug\Repository.pdb
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\bin\Debug\Services.pdb
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\bin\Debug\SharedForms.pdb
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\bin\Debug\SharedForms.exe.config
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\bin\Debug\Dapper.xml
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\bin\Debug\Microsoft.ReportViewer.WinForms.xml
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.csproj.AssemblyReference.cache
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.Estadisticas.Compras.comprasxdia.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.Estadisticas.Compras.comprasxprove.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.GenericForms.CommonFormOneField.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.formasPago.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.Locales.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.Personal.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.PersonalENLocal.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.Auxiliar.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.genericoPersona.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.GenericForms.cuentaCorriente.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.NuevoRecibo.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.resumenCC.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.verRecibo.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.GenericForms.Notas.AgregarItemNota.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.GenericForms.Notas.MostrarNota.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.GenericForms.Nota2.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.notaBase.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.padre.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.printLabel.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.Properties.Resources.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.Proveedores.MostrarcomprasAProveedores.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.Proveedores.comprasAProveedores.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.Proveedores.NuevaOPago.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.Proveedores.resumenCCProveedores.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.Proveedores.verPago.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.Tesoreria.avisosCheques.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.Tesoreria.cartera.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.Tesoreria.chequera.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.Tesoreria.chequesEmitidos.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.Tesoreria.cuentas.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.Tesoreria.Depositocuenta.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.Tesoreria.extraccionCuenta.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.Tesoreria.movimientosCuenta.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.Tesoreria.nuevaCuenta.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.Tesoreria.nuevoCheque.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.Tesoreria.pagoCheque.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.Tesoreria.verCheque.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.Tesoreria.verCuenta.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.Tesoreria.verDeposito.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.TestPrinter.resources
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.csproj.GenerateResource.cache
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.csproj.CoreCompileInputs.cache
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.TrustInfo.xml
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.exe.manifest
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.application
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.csproj.Up2Date
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.exe
+C:\Work\Control Stock\SistemaAdministracionWin7\Central\obj\x86\Debug\Central.pdb

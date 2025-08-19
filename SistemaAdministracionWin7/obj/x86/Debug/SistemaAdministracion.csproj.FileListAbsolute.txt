@@ -1,0 +1,4 @@
+C:\Users\afrydman\Documents\da_fc\Global4_2\SistemaAdministracion\bin\Debug\SistemaAdministracion.exe
+C:\Users\afrydman\Documents\da_fc\Global4_2\SistemaAdministracion\bin\Debug\SistemaAdministracion.pdb
+C:\Users\afrydman\Documents\da_fc\Global4_2\SistemaAdministracion\obj\x86\Debug\SistemaAdministracion.exe
+C:\Users\afrydman\Documents\da_fc\Global4_2\SistemaAdministracion\obj\x86\Debug\SistemaAdministracion.pdb

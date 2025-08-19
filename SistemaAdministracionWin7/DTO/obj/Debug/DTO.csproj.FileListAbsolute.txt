@@ -1,0 +1,31 @@
+F:\Laburo\Sistema\Fuente\SistemaAdministracion\DTO\bin\Debug\DTO.dll
+F:\Laburo\Sistema\Fuente\SistemaAdministracion\DTO\bin\Debug\DTO.pdb
+F:\Laburo\Sistema\Fuente\SistemaAdministracion\DTO\bin\Debug\Dapper.dll
+F:\Laburo\Sistema\Fuente\SistemaAdministracion\DTO\bin\Debug\FizzWare.NBuilder.dll
+F:\Laburo\Sistema\Fuente\SistemaAdministracion\DTO\bin\Debug\ObjectDumper.dll
+F:\Laburo\Sistema\Fuente\SistemaAdministracion\DTO\bin\Debug\Dapper.xml
+F:\Laburo\Sistema\Fuente\SistemaAdministracion\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+F:\Laburo\Sistema\Fuente\SistemaAdministracion\DTO\obj\Debug\DTO.dll
+F:\Laburo\Sistema\Fuente\SistemaAdministracion\DTO\obj\Debug\DTO.pdb
+C:\Work\SistemaAdministracion\DTO\bin\Debug\DTO.dll
+C:\Work\SistemaAdministracion\DTO\bin\Debug\DTO.pdb
+C:\Work\SistemaAdministracion\DTO\bin\Debug\Dapper.dll
+C:\Work\SistemaAdministracion\DTO\bin\Debug\FizzWare.NBuilder.dll
+C:\Work\SistemaAdministracion\DTO\bin\Debug\ObjectDumper.dll
+C:\Work\SistemaAdministracion\DTO\bin\Debug\Dapper.xml
+C:\Work\SistemaAdministracion\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Work\SistemaAdministracion\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Work\SistemaAdministracion\DTO\obj\Debug\DTO.dll
+C:\Work\SistemaAdministracion\DTO\obj\Debug\DTO.pdb
+C:\Work\SistemaAdministracion\DTO\obj\Debug\DTO.csproj.Up2Date
+C:\Work\Control Stock\SistemaAdministracionWin7\DTO\bin\Debug\DTO.dll
+C:\Work\Control Stock\SistemaAdministracionWin7\DTO\bin\Debug\DTO.pdb
+C:\Work\Control Stock\SistemaAdministracionWin7\DTO\bin\Debug\Dapper.dll
+C:\Work\Control Stock\SistemaAdministracionWin7\DTO\bin\Debug\FizzWare.NBuilder.dll
+C:\Work\Control Stock\SistemaAdministracionWin7\DTO\bin\Debug\ObjectDumper.dll
+C:\Work\Control Stock\SistemaAdministracionWin7\DTO\bin\Debug\Dapper.xml
+C:\Work\Control Stock\SistemaAdministracionWin7\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Work\Control Stock\SistemaAdministracionWin7\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Work\Control Stock\SistemaAdministracionWin7\DTO\obj\Debug\DTO.csproj.Up2Date
+C:\Work\Control Stock\SistemaAdministracionWin7\DTO\obj\Debug\DTO.dll
+C:\Work\Control Stock\SistemaAdministracionWin7\DTO\obj\Debug\DTO.pdb
