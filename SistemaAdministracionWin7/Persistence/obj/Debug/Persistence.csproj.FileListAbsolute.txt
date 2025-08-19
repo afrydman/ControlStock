@@ -1,7 +1,0 @@
-F:\Laburo\Sistema\Fuente\SistemaAdministracion\Persistence\bin\Debug\Persistence.dll
-F:\Laburo\Sistema\Fuente\SistemaAdministracion\Persistence\bin\Debug\Persistence.pdb
-F:\Laburo\Sistema\Fuente\SistemaAdministracion\Persistence\bin\Debug\DTO.dll
-F:\Laburo\Sistema\Fuente\SistemaAdministracion\Persistence\bin\Debug\DTO.pdb
-F:\Laburo\Sistema\Fuente\SistemaAdministracion\Persistence\obj\Debug\Persistence.csprojResolveAssemblyReference.cache
-F:\Laburo\Sistema\Fuente\SistemaAdministracion\Persistence\obj\Debug\Persistence.dll
-F:\Laburo\Sistema\Fuente\SistemaAdministracion\Persistence\obj\Debug\Persistence.pdb
