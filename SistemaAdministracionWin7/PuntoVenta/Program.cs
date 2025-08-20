@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Windows.Forms;
 using Services;
-
+using Helper.LogService;
 
 namespace PuntoVenta
 {
@@ -21,6 +21,12 @@ namespace PuntoVenta
                 {
                     try
                     {
+                        // Initialize logger using config settings
+                        LoggerConfig.InitializeModuleLogger("PuntoVenta", LogLevel.Info);
+                        LoggerConfig.InitializeCommonLoggers();
+                        
+                        Log.WriteInfo("PuntoVenta", "=== PuntoVenta application starting ===");
+                        
                         Application.EnableVisualStyles();
                         Application.SetCompatibleTextRenderingDefault(false);
                         Application.Run(new padre());
@@ -28,7 +34,15 @@ namespace PuntoVenta
                     catch (Exception e2)
                     {
                         MessageBox.Show("El sistema detecto un error y se cerrara", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        HelperService.writeLog("Error: " + e2.ToString(), true);
+                        
+                        // Log using new logger
+                        if (Log.Exists("PuntoVenta"))
+                        {
+                            Log.WriteFatal("PuntoVenta", "Fatal error in application", e2);
+                        }
+                        
+                        // Also log via HelperService which now uses the new logger
+                        HelperService.WriteException(e2);
                         Application.Exit();
 
                     }

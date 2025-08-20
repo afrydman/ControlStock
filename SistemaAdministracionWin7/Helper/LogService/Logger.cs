@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 
-namespace SharedForms.LogService
+namespace Helper.LogService
 {
     public class Logger : ILogger
     {

@@ -1,15 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using SharedForms.ConsoleWriterService;
 
-namespace SharedForms.LogService
+namespace Helper.LogService
 {
     public static class Log
     {
         private static readonly Dictionary<string, ILogger> _loggers = new Dictionary<string, ILogger>();
         private static readonly object _lockObject = new object();
-        private static ConsoleWriter _consoleWriter;
         private static LogLevel _defaultMinimumLevel = LogLevel.Info;
 
         public static LogLevel DefaultMinimumLevel
@@ -28,11 +26,8 @@ namespace SharedForms.LogService
             }
         }
 
-        public static void New(string loggerId, string file, ConsoleWriter consoleWriter = null, LogLevel? minimumLevel = null)
+        public static void New(string loggerId, string file, LogLevel? minimumLevel = null)
         {
-            if (consoleWriter == null) consoleWriter = new ConsoleWriterNull();
-            _consoleWriter = consoleWriter;
-
             lock (_lockObject)
             {
                 // Check for conflicts
@@ -79,11 +74,6 @@ namespace SharedForms.LogService
         {
             var logger = Get(loggerId);
             logger.Log(level, message);
-            
-            if (_consoleWriter != null && level >= logger.MinimumLevel)
-            {
-                _consoleWriter.printWithDateTime($"[{level}] {message}");
-            }
         }
 
         public static void WriteDebug(string loggerId, string message)
@@ -110,11 +100,6 @@ namespace SharedForms.LogService
         {
             var logger = Get(loggerId);
             logger.LogError(message, ex);
-            
-            if (_consoleWriter != null && LogLevel.Error >= logger.MinimumLevel)
-            {
-                _consoleWriter.printWithDateTime($"[ERROR] {message}: {ex?.Message}");
-            }
         }
 
         public static void WriteFatal(string loggerId, string message)
@@ -126,11 +111,6 @@ namespace SharedForms.LogService
         {
             var logger = Get(loggerId);
             logger.LogFatal(message, ex);
-            
-            if (_consoleWriter != null && LogLevel.Fatal >= logger.MinimumLevel)
-            {
-                _consoleWriter.printWithDateTime($"[FATAL] {message}: {ex?.Message}");
-            }
         }
 
         public static void Flush(string loggerId)

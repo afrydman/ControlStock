@@ -114,6 +114,10 @@
       <Project>{ca8bfa2d-c693-4405-a12a-7426dbcc9882}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Helper\Helper.csproj">
+      <Project>{F5B8E1A3-9C4D-4B5E-A1C2-8D7F6E9A2B8C}</Project>
+      <Name>Helper</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Repository\Repository.csproj">
       <Project>{725f298f-af5d-468f-94a4-6d5aacdab9a6}</Project>
       <Name>Repository</Name>

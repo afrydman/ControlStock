@@ -190,6 +190,10 @@
       <Project>{CA8BFA2D-C693-4405-A12A-7426DBCC9882}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Helper\Helper.csproj">
+      <Project>{f5b8e1a3-9c4d-4b5e-a1c2-8d7f6e9a2b8c}</Project>
+      <Name>Helper</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Repository\Repository.csproj">
       <Project>{725f298f-af5d-468f-94a4-6d5aacdab9a6}</Project>
       <Name>Repository</Name>
@@ -227,6 +231,9 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

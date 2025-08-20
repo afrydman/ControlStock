@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace SharedForms.LogService
+namespace Helper.LogService
 {
     public class NullLogger : ILogger
     {

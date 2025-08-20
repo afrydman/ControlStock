@@ -8,6 +8,7 @@ using System.IO;
 
 using DTO.BusinessEntities;
 using Services.LocalService;
+using Helper.LogService;
 
 namespace Services
 {
@@ -274,66 +275,69 @@ namespace Services
 
         public static void WriteException(Exception exception)
         {
-
-            HelperService.writeLog(
-                      exception.Message + Environment.NewLine + Environment.NewLine + exception.StackTrace, true, true);
+            // Try to find existing logger (Central or PuntoVenta) first, then fallback to app
+            string loggerId = "app";
+            if (Log.Exists("Central"))
+            {
+                loggerId = "Central";
+            }
+            else if (Log.Exists("PuntoVenta"))
+            {
+                loggerId = "PuntoVenta";
+            }
+            else if (!Log.Exists("app"))
+            {
+                LoggerConfig.InitializeLogger("app", "app.log", LogLevel.Info);
+            }
+            
+            // Use the new logger's exception handling
+            Log.WriteError(loggerId, "Exception occurred", exception);
         }
 
         public static void writeLog(string log, bool printDate, bool isError = false)
         {
-
-
-            VerificarCarpetaLogs();
-
-            StreamWriter writetext = isError ? new StreamWriter(ConfigurationManager.AppSettings["CarpetaLogs"] + @"\" + DateTime.Today.ToString("yyyy-MM-dd") + logFileError, true) : new StreamWriter(ConfigurationManager.AppSettings["CarpetaLogs"] + @"\" + DateTime.Today.ToString("yyyy-MM-dd") + logFile, true);
-
-
-
-            if (printDate)
+            // Try to find existing logger (Central or PuntoVenta) first, then fallback to app
+            string loggerId = "app";
+            if (Log.Exists("Central"))
             {
-                writetext.WriteLine("****************************************");
-                writetext.WriteLine(DateTime.Now);
-                writetext.WriteLine("****************************************");
+                loggerId = "Central";
+            }
+            else if (Log.Exists("PuntoVenta"))
+            {
+                loggerId = "PuntoVenta";
+            }
+            else if (!Log.Exists("app"))
+            {
+                LoggerConfig.InitializeLogger("app", "app.log", LogLevel.Info);
             }
 
-            writetext.WriteLine("=========");
-
-            string conn = ConfigurationManager.ConnectionStrings["Local"].ConnectionString;
-            if (conn != null)
+            // Add connection info to log message if needed
+            string fullMessage = log;
+            if (printDate)
             {
-                writetext.WriteLine("Conexion: " + conn);
+                string conn = ConfigurationManager.ConnectionStrings["Local"]?.ConnectionString ?? "Null connection";
+                fullMessage = $"{log}\n[Connection: {conn}]";
+            }
+
+            // Log to appropriate logger with correct level
+            if (isError)
+            {
+                Log.WriteError(loggerId, fullMessage);
             }
             else
             {
-                writetext.WriteLine("Conexion: Null connection");
+                Log.WriteInfo(loggerId, fullMessage);
             }
-
-            writetext.WriteLine("=========");
-
-
-            writetext.WriteLine(log);
-            writetext.WriteLine("****************************************");
-            writetext.Close();
         }
 
+        // This method is no longer needed as LoggerConfig handles folder creation
         private static void VerificarCarpetaLogs()
         {
-
-            if (ConfigurationManager.AppSettings["CarpetaLogs"] == null || String.IsNullOrEmpty(ConfigurationManager.AppSettings["CarpetaLogs"]))
-                throw new Exception("CarpetaLogs no esta definido");
-
-            string carpetaLogs = ConfigurationManager.AppSettings["CarpetaLogs"].ToString();
-
-            if (!Directory.Exists(carpetaLogs))
-                Directory.CreateDirectory(carpetaLogs);
-
+            // Handled by LoggerConfig.LogFolder property
         }
         public static void writeLog(string log)
         {
-
             writeLog(log, true);
-
-
         }
 
 
