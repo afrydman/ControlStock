@@ -7,10 +7,10 @@ namespace Persistence
 {
     public class retiroTipoDataMapper
     {
-        public static List<DTO.BusinessEntities.tipoRetiroData> getAll(bool connLocal = true)
+        public static List<DTO.BusinessEntities.TipoRetiroData> getAll(bool connLocal = true)
         {
-            List<tipoRetiroData> rs = new List<tipoRetiroData>();
-            tipoRetiroData r;
+            List<TipoRetiroData> rs = new List<TipoRetiroData>();
+            TipoRetiroData r;
             
             
 
@@ -18,7 +18,7 @@ namespace Persistence
             while (dataReader.Read())
             {
 
-                r = new tipoRetiroData();
+                r = new TipoRetiroData();
 
                 r.Description = dataReader["descripcion"].ToString();
                 r.ID = new Guid(dataReader["id"].ToString()); ;
@@ -31,10 +31,10 @@ namespace Persistence
             return rs;
         }
 
-        public static tipoRetiroData getbyID(Guid idRetiro)
+        public static TipoRetiroData getbyID(Guid idRetiro)
         {
             
-            tipoRetiroData r= new tipoRetiroData();
+            TipoRetiroData r= new TipoRetiroData();
 
 
             List<SqlParameter> ParametersList = new List<SqlParameter>();
@@ -52,7 +52,7 @@ namespace Persistence
             return r;
         }
 
-        public static bool insert(tipoRetiroData p, bool connLocal )
+        public static bool insert(TipoRetiroData p, bool connLocal )
         {
             List<SqlParameter> ParametersList = new List<SqlParameter>();
             ParametersList.Add(new SqlParameter("@id", p.ID));
@@ -62,7 +62,7 @@ namespace Persistence
             return Conexion.ExecuteNonQuery("dbo.tiporetiro_insert", ParametersList,true,connLocal);
         }
 
-        public static bool update(tipoRetiroData p, bool connLocal )
+        public static bool update(TipoRetiroData p, bool connLocal )
         {
             List<SqlParameter> ParametersList = new List<SqlParameter>();
             ParametersList.Add(new SqlParameter("@id", p.ID));

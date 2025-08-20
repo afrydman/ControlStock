@@ -238,6 +238,9 @@
     <Compile Include="Impositivo\vales.designer.cs">
       <DependentUpon>vales.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoggedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LogService\ILogger.cs" />
     <Compile Include="LogService\Log.cs" />
     <Compile Include="LogService\Logger.cs" />
@@ -598,6 +601,10 @@
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{CA8BFA2D-C693-4405-A12A-7426DBCC9882}</Project>
       <Name>DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Persistence\Persistence.csproj">
+      <Project>{7CF9AD7D-F6D2-45F6-B9B0-20A7A95D51BB}</Project>
+      <Name>Persistence</Name>
     </ProjectReference>
     <ProjectReference Include="..\Repository\Repository.csproj">
       <Project>{725f298f-af5d-468f-94a4-6d5aacdab9a6}</Project>

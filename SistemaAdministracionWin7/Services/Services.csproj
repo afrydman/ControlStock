@@ -81,6 +81,7 @@
     <Compile Include="Interfaces\IGenericService.cs" />
     <Compile Include="AdministracionService\IngresoService.cs" />
     <Compile Include="Interfaces\IPersona.cs" />
+    <Compile Include="LoggedService.cs" />
     <Compile Include="AdministracionService\RetiroService.cs" />
     <Compile Include="MirazonService\MiRazonService.cs" />
     <Compile Include="NotaService\INotaService.cs" />
@@ -113,6 +114,10 @@
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{ca8bfa2d-c693-4405-a12a-7426dbcc9882}</Project>
       <Name>DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Persistence\Persistence.csproj">
+      <Project>{7CF9AD7D-F6D2-45F6-B9B0-20A7A95D51BB}</Project>
+      <Name>Persistence</Name>
     </ProjectReference>
     <ProjectReference Include="..\Repository\Repository.csproj">
       <Project>{725f298f-af5d-468f-94a4-6d5aacdab9a6}</Project>

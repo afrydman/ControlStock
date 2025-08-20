@@ -38,9 +38,9 @@ namespace Persistence
         {
          
             usuarioData v = new usuarioData();
-            v.usuario = dataReader["usuario"].ToString();
-            v.hashPassword= dataReader["password"].ToString();
-            v.cliente = (GrupoCliente)Convert.ToInt32(dataReader["cliente"].ToString());
+            v.Usuario = dataReader["Usuario"].ToString();
+            v.hashPassword= dataReader["Password"].ToString();
+            v.Cliente = (GrupoCliente)Convert.ToInt32(dataReader["Cliente"].ToString());
             return v;
         }
     }

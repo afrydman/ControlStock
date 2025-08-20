@@ -45,8 +45,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatabaseOperationException.cs" />
+    <Compile Include="LogService\DomainLoggers.cs" />
+    <Compile Include="LogService\EnhancedLoggeable.cs" />
+    <Compile Include="LogService\EnhancedLogger.cs" />
     <Compile Include="LogService\ILogger.cs" />
     <Compile Include="LogService\Log.cs" />
+    <Compile Include="LogService\LogConfiguration.cs" />
+    <Compile Include="LogService\Loggeable.cs" />
     <Compile Include="LogService\Logger.cs" />
     <Compile Include="LogService\NullLogger.cs" />
     <Compile Include="Mappers\bancoDataMapper.cs" />
@@ -66,7 +72,7 @@
     <Compile Include="Mappers\listaPrecioDataMapper.cs" />
     <Compile Include="Mappers\listaPrecioProductoTalleDataMapper.cs" />
     <Compile Include="Mappers\localDataMapper.cs" />
-    <Compile Include="LogService\Loggeable.cs" />
+
     <Compile Include="Mappers\movimientoCuentaDataMapper.cs" />
     <Compile Include="Mappers\notaCreditoClientesDataMapper.cs" />
     <Compile Include="Mappers\ordenPagoDataMapper.cs" />

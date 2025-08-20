@@ -49,6 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EnhancedDbAccess.cs" />
+    <Compile Include="EnhancedDbRepository.cs" />
     <Compile Include="Repositories\AdministracionRepository\IRetiroRepository.cs" />
     <Compile Include="Repositories\AdministracionRepository\IIngresoRepository.cs" />
     <Compile Include="Repositories\AdministracionRepository\IngresoRepository.cs" />
@@ -125,6 +127,7 @@
     <Compile Include="Repositories\PedidoRepository\IPedidoRepository.cs" />
     <Compile Include="Repositories\PedidoRepository\PedidoDetalleRepository.cs" />
     <Compile Include="Repositories\PedidoRepository\PedidoRepository.cs" />
+    <Compile Include="Repositories\PersonalRepository\EnhancedPersonalRepository.cs" />
     <Compile Include="Repositories\PersonalRepository\IPersonalRepository.cs" />
     <Compile Include="Repositories\PersonalRepository\PersonalRepository.cs" />
     <Compile Include="Repositories\PrecioRepository\IPrecioRepository.cs" />
@@ -166,6 +169,10 @@
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{CA8BFA2D-C693-4405-A12A-7426DBCC9882}</Project>
       <Name>DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Persistence\Persistence.csproj">
+      <Project>{7CF9AD7D-F6D2-45F6-B9B0-20A7A95D51BB}</Project>
+      <Name>Persistence</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

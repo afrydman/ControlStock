@@ -5,17 +5,17 @@ using DTO.BusinessEntities;
 
 namespace Persistence
 {
-    public class ventaDetalleDataMapper
+    public class VentaDetalleDataMapper
     {
-        public static bool insertDetalle(DTO.BusinessEntities.ventaDetalleData detalle, bool connLocal = true)
+        public static bool insertDetalle(DTO.BusinessEntities.VentaDetalleData detalle, bool connLocal = true)
         {
             	
             List<SqlParameter> ParametersList = new List<SqlParameter>();
             ParametersList.Add(new SqlParameter("@idVenta", detalle.FatherID));
-            ParametersList.Add(new SqlParameter("@codigo", detalle.codigo));
-            ParametersList.Add(new SqlParameter("@precio", detalle.precioUnidad));
-            ParametersList.Add(new SqlParameter("@cantidad", detalle.cantidad));
-            ParametersList.Add(new SqlParameter("@alicuota", detalle.alicuota));
+            ParametersList.Add(new SqlParameter("@codigo", detalle.Codigo));
+            ParametersList.Add(new SqlParameter("@precio", detalle.PrecioUnidad));
+            ParametersList.Add(new SqlParameter("@cantidad", detalle.Cantidad));
+            ParametersList.Add(new SqlParameter("@alicuota", detalle.Alicuota));
 
 
             return Conexion.ExecuteNonQuery("dbo.venta_detalle_Insert", ParametersList, true, connLocal);
@@ -23,10 +23,10 @@ namespace Persistence
 
 
 
-        public static List<DTO.BusinessEntities.ventaDetalleData> getbyID(Guid id, bool connLocal = true)
+        public static List<DTO.BusinessEntities.VentaDetalleData> getbyID(Guid id, bool connLocal = true)
         {
-            List<ventaDetalleData> detalles = new List<ventaDetalleData>();
-            ventaDetalleData detalle;
+            List<VentaDetalleData> detalles = new List<VentaDetalleData>();
+            VentaDetalleData detalle;
             List<SqlParameter> ParametersList = new List<SqlParameter>();
             ParametersList.Add(new SqlParameter("@id", id));
 
@@ -41,10 +41,10 @@ namespace Persistence
             return detalles;
         }
 
-        public static List<ventaDetalleData> getbyCodigoInterno(string p)
+        public static List<VentaDetalleData> getbyCodigoInterno(string p)
         {
-            List<ventaDetalleData> detalles = new List<ventaDetalleData>();
-            ventaDetalleData detalle;
+            List<VentaDetalleData> detalles = new List<VentaDetalleData>();
+            VentaDetalleData detalle;
             List<SqlParameter> ParametersList = new List<SqlParameter>();
             ParametersList.Add(new SqlParameter("@codigo", p+"%"));
 
@@ -66,15 +66,15 @@ namespace Persistence
             return detalles;
         }
 
-        private static ventaDetalleData CargoDetalle(SqlDataReader dataReader)
+        private static VentaDetalleData CargoDetalle(SqlDataReader dataReader)
         {
-            ventaDetalleData detalle = new ventaDetalleData();
+            VentaDetalleData detalle = new VentaDetalleData();
 
             detalle.FatherID = new Guid(dataReader["idventa"].ToString());
-            detalle.precioUnidad = Convert.ToDecimal(dataReader["precio"].ToString());
-            detalle.alicuota = Convert.ToDecimal(dataReader["alicuota"].ToString());
-            detalle.codigo = dataReader["codigo"].ToString();
-            detalle.cantidad = Convert.ToDecimal(dataReader["cantidad"].ToString());
+            detalle.PrecioUnidad = Convert.ToDecimal(dataReader["precio"].ToString());
+            detalle.Alicuota = Convert.ToDecimal(dataReader["alicuota"].ToString());
+            detalle.Codigo = dataReader["codigo"].ToString();
+            detalle.Cantidad = Convert.ToDecimal(dataReader["cantidad"].ToString());
             return detalle;
         }
     }

@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedForms", "SharedForms\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{2CF08246-9E49-4F5B-8E84-89FFC9D6BCE6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{7CF9AD7D-F6D2-45F6-B9B0-20A7A95D51BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,6 +93,18 @@ Global
 		{2CF08246-9E49-4F5B-8E84-89FFC9D6BCE6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{2CF08246-9E49-4F5B-8E84-89FFC9D6BCE6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{2CF08246-9E49-4F5B-8E84-89FFC9D6BCE6}.Release|x86.ActiveCfg = Release|Any CPU
+		{7CF9AD7D-F6D2-45F6-B9B0-20A7A95D51BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CF9AD7D-F6D2-45F6-B9B0-20A7A95D51BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CF9AD7D-F6D2-45F6-B9B0-20A7A95D51BB}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{7CF9AD7D-F6D2-45F6-B9B0-20A7A95D51BB}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{7CF9AD7D-F6D2-45F6-B9B0-20A7A95D51BB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7CF9AD7D-F6D2-45F6-B9B0-20A7A95D51BB}.Debug|x86.Build.0 = Debug|Any CPU
+		{7CF9AD7D-F6D2-45F6-B9B0-20A7A95D51BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CF9AD7D-F6D2-45F6-B9B0-20A7A95D51BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CF9AD7D-F6D2-45F6-B9B0-20A7A95D51BB}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{7CF9AD7D-F6D2-45F6-B9B0-20A7A95D51BB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{7CF9AD7D-F6D2-45F6-B9B0-20A7A95D51BB}.Release|x86.ActiveCfg = Release|Any CPU
+		{7CF9AD7D-F6D2-45F6-B9B0-20A7A95D51BB}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

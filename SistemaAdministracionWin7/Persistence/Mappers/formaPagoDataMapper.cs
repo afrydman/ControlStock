@@ -24,7 +24,7 @@ namespace Persistence
                 fp.Enable = Convert.ToBoolean(dataReader["anulado"].ToString());
                 if (dataReader["credito"].ToString()!="")
                 {
-                    fp.credito= Convert.ToBoolean(dataReader["credito"].ToString());    
+                    fp.Credito= Convert.ToBoolean(dataReader["credito"].ToString());    
                 }
                 
 
@@ -51,7 +51,7 @@ namespace Persistence
                 fp.Description = dataReader["descripcion"].ToString();
                 fp.ID = new Guid(dataReader["id"].ToString());
                 fp.Enable = Convert.ToBoolean(dataReader["anulado"].ToString());
-                fp.credito = Convert.ToBoolean(dataReader["credito"].ToString());
+                fp.Credito = Convert.ToBoolean(dataReader["credito"].ToString());
 
                 
             }
@@ -73,7 +73,7 @@ namespace Persistence
             List<SqlParameter> ParametersList = new List<SqlParameter>();
             ParametersList.Add(new SqlParameter("@id", f.ID));
             ParametersList.Add(new SqlParameter("@descripcion", f.Description));
-            ParametersList.Add(new SqlParameter("@credito", f.credito));
+            ParametersList.Add(new SqlParameter("@credito", f.Credito));
 
 
 
@@ -86,7 +86,7 @@ namespace Persistence
             ParametersList.Add(new SqlParameter("@id", f.ID));
             ParametersList.Add(new SqlParameter("@descripcion", f.Description));
             ParametersList.Add(new SqlParameter("@anulado", f.Enable));
-            ParametersList.Add(new SqlParameter("@credito", f.credito));
+            ParametersList.Add(new SqlParameter("@credito", f.Credito));
             return Conexion.ExecuteNonQuery("dbo.formaspago_Update", ParametersList,true,connLocal);
         }
     }
