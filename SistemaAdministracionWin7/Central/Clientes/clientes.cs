@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using BusinessComponents;
 using DTO.BusinessEntities;
 using Repository.ClienteRepository;
 using Services.ClienteService;

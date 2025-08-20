@@ -221,7 +221,6 @@ namespace SharedForms.Estadisticas.Ventas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //venta.imprimir(BusinessComponents.venta.impresiones.factura, _ventaID);
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)

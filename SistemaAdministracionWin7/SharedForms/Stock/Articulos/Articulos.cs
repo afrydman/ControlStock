@@ -156,14 +156,6 @@ namespace SharedForms.Stock.Articulos
         {
 
             ProveedorData p = ((ProveedorData)cmbProveedores.SelectedItem);
-            //string lastcode = BusinessComponents.producto.getLastCode(p.Codigo).Substring(4);
-
-            //int aux = 0;
-            //if (lastcode!="")
-            //{
-            //    aux= Convert.ToInt32(lastcode);
-            //}
-            //aux++;
 
             
 

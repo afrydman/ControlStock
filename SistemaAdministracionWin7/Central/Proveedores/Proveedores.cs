@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using BusinessComponents;
 using DTO.BusinessEntities;
 
 namespace Central.Proveedores

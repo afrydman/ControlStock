@@ -435,8 +435,6 @@ namespace SharedForms.Estadisticas.Cajas
 
         //private void cargarCambios(Guid Local, DateTime fecha)
         //{
-        //    List<ventaData> cambiosHoy = BusinessComponents.venta.getbyfecha(DateTime.Now.Date, true);
-
         //    cargoDatos(cambiosHoy, tablaVentas, true);
 
         //}

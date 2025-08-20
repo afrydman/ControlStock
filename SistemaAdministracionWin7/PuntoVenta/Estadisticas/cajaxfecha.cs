@@ -81,8 +81,6 @@ namespace PuntoVenta.Estadisticas
         }
         //private void cargarCambios(Guid idlocal, DateTime fecha)
         //{
-        //    List<ventaData> cambiosHoy = BusinessComponents.venta.getbyfecha(fecha.Date, true, idlocal);
-
         //    cargoDatos(cambiosHoy, tablaVentas, true);
 
         //}

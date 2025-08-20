@@ -269,7 +269,6 @@ namespace Central.Tesoreria
 
         private void cargarBancos()
         {
-            //List<bancoData> bs = BusinessComponents.banco.getAll();
             var bancoService = new BancoService(new BancoRepository());
             List<BancoData> bs = bancoService.GetAll(true);
 

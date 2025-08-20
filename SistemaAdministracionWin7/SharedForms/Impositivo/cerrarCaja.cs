@@ -472,8 +472,6 @@ namespace SharedForms.Impositivo
 
         //private void cargarCambios()
         //{
-        //    List<ventaData> cambiosHoy = BusinessComponents.venta.getbyfecha(DateTime.Now.Date, true);
-
         //    cargoDatos(cambiosHoy, tablaVentas, true);
 
         //}

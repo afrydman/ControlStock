@@ -1,6 +1,0 @@
-F:\Laburo\Sistema\Fuente\SistemaAdministracion\Preparador\obj\x86\Release\Preparador.csprojResolveAssemblyReference.cache
-F:\Laburo\Sistema\Fuente\SistemaAdministracion\Preparador\obj\x86\Release\Preparador.Crear.resources
-F:\Laburo\Sistema\Fuente\SistemaAdministracion\Preparador\obj\x86\Release\Preparador.Migrar.resources
-F:\Laburo\Sistema\Fuente\SistemaAdministracion\Preparador\obj\x86\Release\Preparador.padre.resources
-F:\Laburo\Sistema\Fuente\SistemaAdministracion\Preparador\obj\x86\Release\Preparador.Properties.Resources.resources
-F:\Laburo\Sistema\Fuente\SistemaAdministracion\Preparador\obj\x86\Release\Preparador.csproj.GenerateResource.Cache
