@@ -42,6 +42,9 @@ using SharedForms.Stock.Articulos;
 using SharedForms.Stock.Precios;
 using SharedForms.Ventas;
 using Services.ClienteService;
+using Services.JsonSerializationService;
+using DTO;
+using Helper.LogService;
 
 
 namespace Central
@@ -862,7 +865,7 @@ namespace Central
 
         private void verificarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AbrirForm(new CerrarCajaNuevo(), this);
+
         }
 
         private void ventasXPersonalToolStripMenuItem_Click(object sender, EventArgs e)
@@ -893,7 +896,79 @@ namespace Central
             AbrirFormAdmin(new PuntosDeControl(), this);
         }
 
+        private void testJsonRemitoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var _jsonService = new JsonSerializationService();
+            
+            
 
+            Guid remitoID = Guid.NewGuid();
+            // Create a sample remito
+            var remito = new RemitoData
+            {
+                ID = remitoID,
+                Description = "Remito de transferencia entre locales",
+                Enable = true,
+                Date = DateTime.Now,
+                Numero = 1234,
+                Prefix = 1,
+                Monto = 5000.50m,
+                ClaseDocumento = ClaseDocumento.B,
+                IVA = 1050.11m,
+                Descuento = 100.00m,
+                CantidadTotal = 25,
+                FechaRecibo = DateTime.Now.AddDays(1),
 
+                // Set origin location
+                Local = new LocalData
+                {
+                    ID = Guid.NewGuid(),
+
+                },
+
+                // Set destination location
+                LocalDestino = new LocalData
+                {
+                    ID = Guid.NewGuid(),
+
+                },
+
+                // Set vendor/employee
+                Vendedor = new PersonalData
+                {
+                    ID = Guid.NewGuid(),
+
+                },
+
+                // Add detail items
+                Children = new List<remitoDetalleData>
+                {
+                    new remitoDetalleData
+                    {
+
+                        FatherID =remitoID,
+                        Codigo = "PROD001",
+                        Cantidad = 10,
+
+                    },
+                    new remitoDetalleData
+                    {
+                        FatherID =remitoID,
+                        Codigo = "PROD002",
+                        Cantidad = 20,
+                    }
+                }
+            };
+
+            // Serialize to JSON
+            string json = _jsonService.SerializeRemito(remito);
+
+            HelperService.writeLog(json);
+
+            _jsonService.JsonToFile(remito, "holu1.txt");
+            // RemitoData remito2 = _jsonService.DeserializeRemito(json);
+
+            RemitoData remito2 = _jsonService.ReadJsonFromFile("holu.txt");
+        }
     }
 }

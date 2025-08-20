@@ -1,0 +1,90 @@
+# Sistema Administración - Quick Context for AI Assistants
+
+## What This Is
+A Windows Forms-based retail management system for footwear/accessories stores, built with .NET Framework 4.0/4.5 and SQL Server. Currently in production managing inventory across 8 store locations.
+
+## Architecture: Classic N-Tier
+```
+UI Layer:       Central.exe (admin) + PuntoVenta.exe (POS) + SharedForms (shared UI)
+Business Layer: Services (business logic)
+Data Layer:     Repository (data access with Dapper ORM)
+Models:         DTO (data transfer objects)
+Utilities:      Helper (logging, utilities)
+```
+
+## Project Reference Hierarchy
+```
+Central/PuntoVenta → SharedForms → Services → Repository → DTO → Helper
+```
+All projects except Helper use Dapper 1.50.2 for database access.
+
+## Key Patterns & Conventions
+- **Repository Pattern**: Each entity has `IXxxRepository` interface + implementation
+- **Service Layer**: Business logic in `Services.XxxService` classes
+- **DTO Pattern**: All entities as `XxxData` classes in `DTO.BusinessEntities`
+- **Primary Keys**: All tables use `uniqueidentifier` (GUID)
+- **No Foreign Keys**: Referential integrity handled in application layer
+- **Connection**: `Data Source=.;Initial Catalog=local_1;User ID=sistemastock;Password=sistemastock`
+
+## Database (59 tables, 46K records)
+**Active**: productos (4.1K), stock (4.2K), remitos/transfers (24K items), proveedores (279)
+**Minimal**: ventas/sales (13), clientes (6), pagos (13)
+**Unused**: compras, banking, credit notes, orders (all 0 records)
+
+## Business Modules
+- **Inventory** (`Stock/`): Multi-location, size/color tracking, transfers
+- **Sales** (`Ventas/`): POS, electronic invoicing (CAE/AFIP)
+- **Customers** (`Clientes/`): Accounts, receipts
+- **Suppliers** (`Proveedores/`): Purchase orders, payments
+- **Financial** (`Tesoreria/`): Banking, checks, cash flow
+- **Admin** (`Administracion/`): Stores, staff, configuration
+
+## Current State & Important Notes
+1. **Primary Use**: Inventory control & inter-store transfers (very active)
+2. **Secondary**: Limited sales recording, voucher management
+3. **Not Used**: Purchasing, banking, credit notes modules (configured but empty)
+4. **Performance Issues**: No database indexes defined
+5. **Data Integrity Risk**: No foreign key constraints
+6. **Business Type**: Footwear/accessories retail
+7. **Negative Stock**: Allowed (for backorders)
+
+## Common Tasks & Entry Points
+- **Admin Operations**: Run `Central.exe` - full system access
+- **Sales Operations**: Run `PuntoVenta.exe` - POS only
+- **Add New Entity**: Create DTO → Repository interface/impl → Service → UI in SharedForms
+- **Database Changes**: No migrations; direct SQL execution
+
+## Technology Stack
+- **UI**: Windows Forms (.NET 4.0/4.5)
+- **Database**: SQL Server Express
+- **ORM**: Dapper (micro-ORM)
+- **Reports**: Microsoft ReportViewer 10.0
+- **Target**: Windows 7+ (x86)
+
+## Quick SQL Snippets
+```sql
+-- Check stock
+SELECT p.description, s.stock FROM stock s 
+JOIN productos p ON s.idproducto = p.id
+
+-- Recent sales
+SELECT * FROM ventas ORDER BY Date DESC
+
+-- Active products
+SELECT COUNT(*) FROM productos
+```
+
+## Warning Signs in Code
+- Negative stock values = oversold/pending receipt
+- No indexes = expect slow queries on large tables
+- GUID everywhere = no sequential IDs
+
+## If You Need To...
+- **Add a new module**: Follow pattern in existing Services/Repository folders
+- **Find business logic**: Check Services project
+- **Find UI forms**: Central = admin, PuntoVenta = sales, SharedForms = shared
+- **Database queries**: Repository classes contain all SQL
+- **Understand a table**: Check corresponding `XxxData` class in DTO project
+
+---
+*This is a production system actively managing inventory for 8 retail locations. Be careful with database modifications.*
