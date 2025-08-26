@@ -129,11 +129,12 @@ namespace Central
             this.stockXLocalToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.stockDetalladoXToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stockActualXLocalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.auxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.impresionFacturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.testJsonRemitoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.auxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verTransferenciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -951,27 +952,12 @@ namespace Central
             this.stockActualXLocalToolStripMenuItem.Text = "Stock Actual x Local";
             this.stockActualXLocalToolStripMenuItem.Click += new System.EventHandler(this.stockActualXLocalToolStripMenuItem_Click);
             // 
-            // auxToolStripMenuItem
-            // 
-            this.auxToolStripMenuItem.Name = "auxToolStripMenuItem";
-            this.auxToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
-            this.auxToolStripMenuItem.Text = "aux";
-            this.auxToolStripMenuItem.Visible = false;
-            this.auxToolStripMenuItem.Click += new System.EventHandler(this.auxToolStripMenuItem_Click_1);
-            // 
-            // rVToolStripMenuItem
-            // 
-            this.rVToolStripMenuItem.Name = "rVToolStripMenuItem";
-            this.rVToolStripMenuItem.Size = new System.Drawing.Size(33, 20);
-            this.rVToolStripMenuItem.Text = "RV";
-            this.rVToolStripMenuItem.Visible = false;
-            this.rVToolStripMenuItem.Click += new System.EventHandler(this.rVToolStripMenuItem_Click);
-            // 
             // verificarToolStripMenuItem
             // 
             this.verificarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.impresionFacturasToolStripMenuItem,
-            this.testJsonRemitoToolStripMenuItem});
+            this.testJsonRemitoToolStripMenuItem,
+            this.verTransferenciasToolStripMenuItem});
             this.verificarToolStripMenuItem.Name = "verificarToolStripMenuItem";
             this.verificarToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.verificarToolStripMenuItem.Text = "Verificar";
@@ -990,6 +976,29 @@ namespace Central
             this.testJsonRemitoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.testJsonRemitoToolStripMenuItem.Text = "test json remito";
             this.testJsonRemitoToolStripMenuItem.Click += new System.EventHandler(this.testJsonRemitoToolStripMenuItem_Click);
+            // 
+            // auxToolStripMenuItem
+            // 
+            this.auxToolStripMenuItem.Name = "auxToolStripMenuItem";
+            this.auxToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.auxToolStripMenuItem.Text = "aux";
+            this.auxToolStripMenuItem.Visible = false;
+            this.auxToolStripMenuItem.Click += new System.EventHandler(this.auxToolStripMenuItem_Click_1);
+            // 
+            // rVToolStripMenuItem
+            // 
+            this.rVToolStripMenuItem.Name = "rVToolStripMenuItem";
+            this.rVToolStripMenuItem.Size = new System.Drawing.Size(33, 20);
+            this.rVToolStripMenuItem.Text = "RV";
+            this.rVToolStripMenuItem.Visible = false;
+            this.rVToolStripMenuItem.Click += new System.EventHandler(this.rVToolStripMenuItem_Click);
+            // 
+            // verTransferenciasToolStripMenuItem
+            // 
+            this.verTransferenciasToolStripMenuItem.Name = "verTransferenciasToolStripMenuItem";
+            this.verTransferenciasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.verTransferenciasToolStripMenuItem.Text = "Ver Transferencias";
+            this.verTransferenciasToolStripMenuItem.Click += new System.EventHandler(this.verTransferenciasToolStripMenuItem_Click);
             // 
             // padre
             // 
@@ -1117,5 +1126,6 @@ namespace Central
         private System.Windows.Forms.ToolStripMenuItem nuevoToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem verTodosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem testJsonRemitoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verTransferenciasToolStripMenuItem;
     }
 }

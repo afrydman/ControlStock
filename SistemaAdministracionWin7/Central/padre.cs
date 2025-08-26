@@ -45,6 +45,7 @@ using Services.ClienteService;
 using Services.JsonSerializationService;
 using DTO;
 using Helper.LogService;
+using SharedForms.TransferFiles;
 
 
 namespace Central
@@ -969,6 +970,11 @@ namespace Central
             // RemitoData remito2 = _jsonService.DeserializeRemito(json);
 
             //RemitoData remito2 = _jsonService.ReadJsonFromFile("holu.txt");
+        }
+
+        private void verTransferenciasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new Transfers(), this);
         }
     }
 }

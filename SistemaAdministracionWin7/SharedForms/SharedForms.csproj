@@ -360,6 +360,12 @@
     <Compile Include="Stock\ABMRemitos\verEnviosStock.designer.cs">
       <DependentUpon>verEnviosStock.cs</DependentUpon>
     </Compile>
+    <Compile Include="TransferFiles\Transfers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransferFiles\Transfers.Designer.cs">
+      <DependentUpon>Transfers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ventas\agregarArticulo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -556,6 +562,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Stock\ABMRemitos\verEnviosStock.resx">
       <DependentUpon>verEnviosStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransferFiles\Transfers.resx">
+      <DependentUpon>Transfers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ventas\agregarArticulo.resx">
       <DependentUpon>agregarArticulo.cs</DependentUpon>
