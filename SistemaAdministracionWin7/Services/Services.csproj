@@ -58,6 +58,7 @@
     <Compile Include="AbstractService\FatherService.cs" />
     <Compile Include="AbstractService\ObjectGetterService.cs" />
     <Compile Include="Interfaces\IDefaultable.cs" />
+    <Compile Include="TransferService.cs" />
     <Compile Include="PuntoControlService\PuntoControlService.cs" />
     <Compile Include="TributoService\TributoNexoService.cs" />
     <Compile Include="TributoService\TributoService.cs" />

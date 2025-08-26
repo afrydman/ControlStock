@@ -152,9 +152,9 @@ namespace Central
             this.ventasToolStripMenuItem1,
             this.cajaToolStripMenuItem,
             this.estadisticasToolStripMenuItem,
+            this.verificarToolStripMenuItem,
             this.auxToolStripMenuItem,
-            this.rVToolStripMenuItem,
-            this.verificarToolStripMenuItem});
+            this.rVToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1226, 24);

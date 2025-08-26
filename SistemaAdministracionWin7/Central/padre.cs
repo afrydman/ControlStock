@@ -899,7 +899,7 @@ namespace Central
         private void testJsonRemitoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var _jsonService = new JsonSerializationService();
-            
+            var _ftpService = new Services.TransferService();
             
 
             Guid remitoID = Guid.NewGuid();
@@ -960,15 +960,15 @@ namespace Central
                 }
             };
 
-            // Serialize to JSON
-            string json = _jsonService.SerializeRemito(remito);
+            _ftpService.SendRemitoToLocal(remito);
+           
 
-            HelperService.writeLog(json);
+            //HelperService.writeLog(json);
 
-            _jsonService.JsonToFile(remito, "holu1.txt");
+
             // RemitoData remito2 = _jsonService.DeserializeRemito(json);
 
-            RemitoData remito2 = _jsonService.ReadJsonFromFile("holu.txt");
+            //RemitoData remito2 = _jsonService.ReadJsonFromFile("holu.txt");
         }
     }
 }

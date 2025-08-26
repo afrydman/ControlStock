@@ -323,18 +323,18 @@ namespace Services.JsonSerializationService
         {
             try
             {
-                string basePath = GetSaveJsonPath();
-                string fullPath = Path.Combine(basePath, fileName);
+                //string basePath = GetSaveJsonPath();
+                //string fullPath = Path.Combine(basePath, fileName);
                 
                 // Ensure directory exists
-                string directory = Path.GetDirectoryName(fullPath);
+                string directory = Path.GetDirectoryName(fileName);
                 if (!Directory.Exists(directory))
                 {
                     Directory.CreateDirectory(directory);
                 }
 
                 string json = SerializeRemito(remito);
-                File.WriteAllText(fullPath, json);
+                File.WriteAllText(fileName, json);
             }
             catch (Exception ex)
             {
@@ -419,159 +419,5 @@ namespace Services.JsonSerializationService
         }
     }
 
-    /// <summary>
-    /// Alternative simplified service using built-in DataContractJsonSerializer
-    /// Use this if you don't want to add Newtonsoft.Json dependency
-    /// </summary>
-    public class SimpleJsonSerializationService : IJsonSerializationService
-    {
-        public string SerializeObject<T>(T obj)
-        {
-            using (var ms = new System.IO.MemoryStream())
-            {
-                var serializer = new System.Runtime.Serialization.Json.DataContractJsonSerializer(typeof(T));
-                serializer.WriteObject(ms, obj);
-                return System.Text.Encoding.UTF8.GetString(ms.ToArray());
-            }
-        }
-
-        public T DeserializeObject<T>(string json)
-        {
-            using (var ms = new System.IO.MemoryStream(System.Text.Encoding.UTF8.GetBytes(json)))
-            {
-                var serializer = new System.Runtime.Serialization.Json.DataContractJsonSerializer(typeof(T));
-                return (T)serializer.ReadObject(ms);
-            }
-        }
-
-        public string SerializeRemito(RemitoData remito)
-        {
-            return SerializeObject(remito);
-        }
-
-        public RemitoData DeserializeRemito(string json)
-        {
-            return DeserializeObject<RemitoData>(json);
-        }
-
-        public string SerializeList<T>(List<T> list)
-        {
-            return SerializeObject(list);
-        }
-
-        public List<T> DeserializeList<T>(string json)
-        {
-            return DeserializeObject<List<T>>(json);
-        }
-
-        public void JsonToFile<T>(T obj, string fileName)
-        {
-            try
-            {
-                string basePath = GetSaveJsonPath();
-                string fullPath = Path.Combine(basePath, fileName);
-                
-                string directory = Path.GetDirectoryName(fullPath);
-                if (!Directory.Exists(directory))
-                {
-                    Directory.CreateDirectory(directory);
-                }
-
-                string json = SerializeObject(obj);
-                File.WriteAllText(fullPath, json);
-            }
-            catch (Exception ex)
-            {
-                throw new InvalidOperationException($"Error saving JSON to file '{fileName}': {ex.Message}", ex);
-            }
-        }
-
-        public void JsonToFile(RemitoData remito, string fileName)
-        {
-            try
-            {
-                string basePath = GetSaveJsonPath();
-                string fullPath = Path.Combine(basePath, fileName);
-                
-                string directory = Path.GetDirectoryName(fullPath);
-                if (!Directory.Exists(directory))
-                {
-                    Directory.CreateDirectory(directory);
-                }
-
-                string json = SerializeRemito(remito);
-                File.WriteAllText(fullPath, json);
-            }
-            catch (Exception ex)
-            {
-                throw new InvalidOperationException($"Error saving Remito JSON to file '{fileName}': {ex.Message}", ex);
-            }
-        }
-
-        public T ReadJsonFromFile<T>(string fileName)
-        {
-            try
-            {
-                string basePath = GetSaveJsonPath();
-                string fullPath = Path.Combine(basePath, fileName);
-                
-                if (!File.Exists(fullPath))
-                {
-                    throw new FileNotFoundException($"JSON file not found: {fullPath}");
-                }
-
-                string json = File.ReadAllText(fullPath);
-                return DeserializeObject<T>(json);
-            }
-            catch (Exception ex)
-            {
-                throw new InvalidOperationException($"Error reading JSON from file '{fileName}': {ex.Message}", ex);
-            }
-        }
-
-        public RemitoData ReadJsonFromFile(string fileName)
-        {
-            try
-            {
-                string basePath = GetSaveJsonPath();
-                string fullPath = Path.Combine(basePath, fileName);
-                
-                if (!File.Exists(fullPath))
-                {
-                    throw new FileNotFoundException($"Remito JSON file not found: {fullPath}");
-                }
-
-                string json = File.ReadAllText(fullPath);
-                return DeserializeRemito(json);
-            }
-            catch (Exception ex)
-            {
-                throw new InvalidOperationException($"Error reading Remito JSON from file '{fileName}': {ex.Message}", ex);
-            }
-        }
-
-        private string GetSaveJsonPath()
-        {
-            try
-            {
-                string configPath = ConfigurationManager.AppSettings["SaveJSON"];
-                
-                if (string.IsNullOrEmpty(configPath))
-                {
-                    throw new ConfigurationErrorsException("SaveJSON configuration key not found in app.config");
-                }
-
-                if (!Path.IsPathRooted(configPath))
-                {
-                    configPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, configPath);
-                }
-
-                return configPath;
-            }
-            catch (Exception ex)
-            {
-                throw new InvalidOperationException($"Error reading SaveJSON configuration: {ex.Message}", ex);
-            }
-        }
-    }
+    
 }
