@@ -82,6 +82,10 @@
             this.tabla.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.tabla.Size = new System.Drawing.Size(969, 361);
             this.tabla.TabIndex = 25;
+            this.tabla.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tabla_CellContentClick);
+            this.tabla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tabla_CellContentClick);
+            this.tabla.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tabla_CellContentClick);
+            this.tabla.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tabla_CellContentClick);
             // 
             // Column1
             // 

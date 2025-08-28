@@ -66,9 +66,9 @@ namespace Repository.Repositories
             using (var con = ConnectionFactory.CreateConnection(_connectionString))
             {
                 var sqlEnvio = @"INSERT INTO [dbo].[FileTransfer]
-                                ([ID],[Description],[Enable],[Date],[Error],[Completed],[ToS3CompleteDir],[LocalFileName],[FromLocalID],[ToLocalID])
+                                ([ID],[Description],[Enable],[Date],[Error],[Completed],[ToS3CompleteDir],[LocalFileName],[FromLocalID],[ToLocalID], remitoID)
 	                            Values
-		                        (@id,@Description,@Enable,@Date,@Error,@Completed,@ToS3CompleteDir,@LocalFileName,@FromLocalID,@ToLocalID)
+		                        (@id,@Description,@Enable,@Date,@Error,@Completed,@ToS3CompleteDir,@LocalFileName,@FromLocalID,@ToLocalID, @remitoID)
 ;
             SELECT @@ROWCOUNT;";
                 return con.QueryFirstOrDefault<int>(sqlEnvio, new
@@ -82,7 +82,8 @@ namespace Repository.Repositories
                     theObject.ToS3CompleteDir,
                     theObject.LocalFileName,
                     theObject.FromLocalID,
-                    theObject.ToLocalID
+                    theObject.ToLocalID,
+                    theObject.remitoID
 
 
                 }) > 0;

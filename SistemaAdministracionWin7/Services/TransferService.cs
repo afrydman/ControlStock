@@ -167,7 +167,9 @@ namespace Services
             try
             { 
                 FileTransferData datita = new FileTransferData();
+
                 datita.ID = Guid.NewGuid();
+                datita.remitoID = remito.ID;
                 datita.Enable = true;
                 datita.ToLocalID = remito.LocalDestino.ID.ToString();
                 datita.FromLocalID = remito.Local.ID.ToString();

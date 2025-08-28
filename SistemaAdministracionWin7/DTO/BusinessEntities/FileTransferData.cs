@@ -14,6 +14,7 @@ namespace DTO.BusinessEntities
         public string LocalFileName { get; set; }
         public string FromLocalID { get; set; }
         public string ToLocalID{ get; set; }
+        public Guid remitoID { get; set; }
 
     }
 }

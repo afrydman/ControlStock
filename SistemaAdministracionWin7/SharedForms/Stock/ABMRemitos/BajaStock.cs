@@ -22,15 +22,18 @@ using Services.ProveedorService;
 using Services.RemitoService;
 using Services.StockService;
 using Services.UsuarioService;
+using SharedForms.Impositivo;
 using SharedForms.Ventas;
 
 namespace SharedForms.Stock
 {
     public partial class BajaStock : stockBase, IreceptorArticulo
     {
+        TransferService transferService = null;
         public BajaStock()
         {
             InitializeComponent();
+             transferService = new TransferService();
         }
 
 
@@ -54,6 +57,8 @@ namespace SharedForms.Stock
                         bool task2 = remitoService.confirmarBaja(r);
                         if (task && task2)
                         {
+
+                            transferService.SendRemitoToLocal(r);
                             MessageBox.Show("Operacion completada", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             limpiarControles();
                             cargarNro();
